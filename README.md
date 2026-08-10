@@ -69,6 +69,17 @@ y validación/Pendientes en
 - **Infra compartida**: serializar deploys por webhook / nice-cgroup
   tras el incidente de carga del VPS (contenido; producción saludable).
 
+### Auto-deploy (2026-08-09)
+
+El webhook de despliegue **estuvo apagado sin avisar**: `translate-webhook.service` corría
+con el secret de ejemplo (`WEBHOOK_SECRET=tu_secreto_webhook_aqui_cambiar`), así que GitHub
+firmaba con el secret real y el servicio respondía **401 `Invalid signature`** — los push a
+`main` no desplegaban nada, mientras el servicio figuraba `active` y el sitio 200. Corregido
+con un secret real en `/root/.translate_webhook_env` (drop-in `10-secret.conf`) alineado con
+el hook de GitHub; verificado con un ping real (**200 OK**, `Signature validated` en el
+journal). Detalle y reglas en
+[`docs/FIX-WEBHOOK-SECRET-PLACEHOLDER-2026-08-09.md`](docs/FIX-WEBHOOK-SECRET-PLACEHOLDER-2026-08-09.md).
+
 ---
 
 ## ✨ Características Principales

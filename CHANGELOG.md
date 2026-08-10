@@ -8,6 +8,23 @@ y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Fixed
+- **El auto-deploy llevaba tiempo apagado: `WEBHOOK_SECRET` era el placeholder** (2026-08-09)
+  - `translate-webhook.service` corría con `WEBHOOK_SECRET=tu_secreto_webhook_aqui_cambiar`,
+    el valor de ejemplo nunca sustituido. GitHub firmaba cada entrega con el secret real del
+    hook, el HMAC no coincidía y el servicio devolvía **401 `Invalid signature`**: los push a
+    `main` **no desplegaban nada**.
+  - **Sin síntoma visible**: el servicio figuraba `active`, el sitio respondía 200 y el
+    endpoint aceptaba conexiones. Se detectó disparando un **ping real** de GitHub contra los
+    57 webhooks del VPS (`POST /hooks/{id}/pings`) en vez de leer configuración.
+  - Fix: secret de 32 bytes aleatorios en `/root/.translate_webhook_env` (0600) cargado por el
+    drop-in `10-secret.conf` (`EnvironmentFile=`, que sobreescribe el `Environment=` del unit),
+    y el mismo valor en el hook de GitHub. Verificado: ping **200 OK** y el journal pasó de
+    `Invalid signature` a **`Signature validated`**.
+  - **Regla**: un secret placeholder es un auto-deploy apagado que no avisa — el arranque debe
+    abortar si el secret no está configurado, no aceptar un default. Y verificar un auto-deploy
+    es **dispararlo**, no leer su configuración.
+  - Doc: [`docs/FIX-WEBHOOK-SECRET-PLACEHOLDER-2026-08-09.md`](docs/FIX-WEBHOOK-SECRET-PLACEHOLDER-2026-08-09.md)
+
 - **`ChunkLoadError` / CSS y JS como `text/plain` (500) en producción** (2026-05-28)
   - El navegador en `translate.cedula360.tech` no cargaba: los chunks de
     `/_next/static/chunks/*.css|*.js` devolvían `500` con MIME `text/plain`
