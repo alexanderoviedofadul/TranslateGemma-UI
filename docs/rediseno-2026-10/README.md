@@ -70,37 +70,23 @@ Ctrl/Cmd + Enter de `TranslationPanel.tsx`. El audit del manual los comprueba co
    firma **solo si llega la cabecera**: un POST sin `X-Hub-Signature-256` con evento `push` lanza el despliegue. El mismo
    script lo usan también `parla-webhook` y `ftp-tutelas-webhook`.
 
-## 6. Pendientes del operador (fuera de este repositorio)
+## 6. Fuera del repositorio — aplicado por el operador el 11-oct-2026
 
-**Despliegue — urgente.** Mientras `/root/scripts/webhook-translate-deploy.sh` no cambie, **cualquier push a `main`
-rompe producción**: su `npm install` con `NODE_ENV=production` quita las devDependencies, borra `.next` y el build
-falla; el servicio sigue en memoria hasta el siguiente reinicio, que lo deja sin `BUILD_ID`. Este rediseño se desplegó a
-mano con el webhook parado (`systemctl stop translate-webhook` → push → compilación → `start`). Cambio pedido:
-
-```bash
-# en vez de `npm install` y `rm -rf .next` + `npm run build`:
-NODE_ENV=development npm install --include=dev
-rm -rf .next.prev && cp -a .next .next.prev
-if npm run build && [ -f .next/BUILD_ID ]; then
-  rm -rf .next.prev; systemctl restart translate-frontend
-else
-  rm -rf .next && mv .next.prev .next; log "ERROR: build fallido; sigue la versión anterior"; exit 1
-fi
-```
-
-**Webhook**: en `webhook-server.js`, rechazar con 401 lo que llegue sin firma (`if (!signature || …)`).
-
-**Caddy** (bloque `translate.cedula360.tech`):
-
-1. CSP sin `unsafe-eval`, sin jsDelivr, cdnjs, Google Fonts ni Parla, y sin `connect-src https: wss:` abiertos
-   (`unsafe-inline` sigue en `script-src` porque Next.js mete en línea la carga de React Server Components):
-   ```
-   Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://www.google.com; frame-src https://www.google.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self'; object-src 'none'"
-   ```
-2. Compresión (hoy ni Caddy ni Next comprimen): `@comprimible not path /ollama/* /webhook* /pbproxy/api/realtime*`
-   y `encode @comprimible zstd gzip` (fuera los flujos en streaming).
-3. Caché de la marca: `@marca path /marca/*` y `header @marca Cache-Control "public, max-age=604800"`.
-4. Opcional: un `log` para el bloque, que hoy no deja rastro de accesos.
+- **Despliegue** (`/root/scripts/webhook-translate-deploy.sh`, copia `….pre-build-seguro-20261011`): instala con
+  `NODE_ENV=development npm install --include=dev`, guarda `.next` en `.next.prev`, compila en limpio y solo reinicia
+  si el build termina **y** deja `.next/BUILD_ID`; si no, restaura la copia y sale con error sin reiniciar.
+- **Webhook** (`/root/scripts/webhook-server.js`, copia `….pre-firma-20261011`; solo lo usa `translate-webhook`:
+  Parla y FTP Tutelas tienen el suyo): la firma es obligatoria y se compara en tiempo constante; sin firma o con
+  firma falsa, 401 (probado). Las entregas de GitHub ya venían firmadas con el secreto de la unidad.
+- **Caddy** (copia `/etc/caddy/Caddyfile.bak.pre-translategemma-rediseno-20261011_153639`): la CSP propuesta,
+  `encode @comprimible zstd gzip` (fuera `/ollama/*`, `/webhook*` y `/pbproxy/api/realtime*`), caché de `/marca/*` y
+  `log` a `/var/log/caddy/translate.log`. Comprobado: los chunks salen con `zstd`; `/`, `/traducir` y `/admin` a 1440
+  y 390 px con consola 0, incluido reCAPTCHA al escribir en el acceso.
+- 🔴 **Trampa al añadir el `log`**: `caddy validate` (como root) **crea** el fichero de log con dueño root y modo 600,
+  y el `reload` siguiente falla porque Caddy (usuario `caddy`) no puede abrirlo. Producción no se cae (rechaza la
+  configuración nueva y sigue con la anterior). Arreglo: `chown caddy:caddy` y `chmod 644` antes de recargar.
+- `/api/pb*` del bloque apunta al PocketBase `:8094`, pero responde 404 a `/_/`, `/api/health` y colecciones (la
+  ruta no casa con el prefijo); el panel tampoco es accesible por `/pbproxy/_/`.
 
 ## 7. Trampas que dejó
 

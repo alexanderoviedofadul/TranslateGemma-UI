@@ -14,7 +14,7 @@ traductor `/traducir`, administración `/admin`, acceso propio o «Continuar con
 |---|---|
 | Frontend | `translate-frontend.service` → `start.sh` → `next start` en `:3003`. `EnvironmentFile=/root/TranslateGemma-UI/.env` (fuera de git) + `/root/.translate_secrets` (600) |
 | PocketBase | `translate-pocketbase.service` en `127.0.0.1:8094` |
-| Webhook | `translate-webhook.service` (`/root/scripts/webhook-server.js`, `:3004`) → `/root/scripts/webhook-translate-deploy.sh` (fuera del repo) |
+| Webhook | `translate-webhook.service` (`/root/scripts/webhook-server.js`, `:3004`, **firma obligatoria** desde el 11-oct-2026) → `/root/scripts/webhook-translate-deploy.sh` (fuera del repo; desde el 11-oct instala devDependencies y solo reinicia si hay `BUILD_ID`) |
 | Caddy | Bloque `translate.cedula360.tech`: `/webhook*` → 3004, `/api/pb*` → 8094, el resto → 3003 |
 
 🔴 **Build y `systemctl restart translate-frontend` siempre juntos, y nunca reiniciar sin `frontend/.next/BUILD_ID`**:

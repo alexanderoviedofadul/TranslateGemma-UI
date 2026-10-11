@@ -7,6 +7,8 @@ y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
 ## [1.0.0] - 2026-10-11 — Manual de Marca v1.0 «De una orilla a otra» y la traducción de nuevo en marcha
 
+- **Fuera del repositorio** (aplicado el 11-oct): despliegue seguro (devDependencies, copia de `.next` y reinicio solo con `BUILD_ID`), firma obligatoria en el webhook y Caddy (CSP sin `unsafe-eval` ni CDNs, compresión, caché de `/marca/*` y log).
+
 Detalle, medición y pendientes en [docs/rediseno-2026-10/README.md](docs/rediseno-2026-10/README.md).
 
 ### Fixed
