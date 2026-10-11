@@ -5,6 +5,33 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.0.0] - 2026-10-11 — Manual de Marca v1.0 «De una orilla a otra» y la traducción de nuevo en marcha
+
+Detalle, medición y pendientes en [docs/rediseno-2026-10/README.md](docs/rediseno-2026-10/README.md).
+
+### Fixed
+- **La traducción no funcionaba**: el proxy `/ollama` apuntaba al Ollama público, que exige token desde el 10-oct
+  (401 en cada llamada). Ahora apunta al Ollama local (`OLLAMA_HOST` en `.env`, fuera de git).
+- **Build automático roto desde agosto**: `npm install` con `NODE_ENV=production` no instala Tailwind; producción se
+  compiló a mano con las devDependencies. El cambio del script de despliegue (fuera del repo) queda pedido.
+
+### Security
+- **`/ollama` con lista blanca de modelos** (`translategemma*`, `gemma3*`, nunca `*cloud*`), `api/tags` filtrado,
+  8 MB por petición y 30 traducciones por minuto e IP: el daemon local tiene registrados los modelos de Ollama Cloud.
+- **`/pbproxy` con lista blanca de rutas**: el panel de superusuario de PocketBase ya no es alcanzable.
+
+### Added
+- **Manual de Marca v1.0** (`docs/Manual_Marca_TranslateGemma/v1.0/`): símbolo propio, paleta Jade con dos orillas,
+  Inter y JetBrains Mono autoalojadas, 39 páginas, inmersivo y portable; `audit_v1.py` con 0 fallos.
+- **Portada inmersiva** con paralaje, recorrido de cinco paradas, los 53 idiomas por grupo, límites y preguntas.
+- Imagen para compartir (`scripts/generar_og.py`), favicon y manifest de la marca; `CLAUDE.md`.
+
+### Changed
+- Traductor y administración con los tokens de la marca; axe 0 en claro y oscuro. Fuera Google Fonts, el favicon de
+  Next.js y los SVG de la plantilla.
+- Fuera «100% local», «sin internet», «55 idiomas» y «4B/12B/27B»; el pie dice que TranslateGemma y Gemma son marcas
+  de Google y que el producto no está afiliado a Google; GitHub con el usuario actual.
+
 ## [Unreleased]
 
 ### Fixed
