@@ -1,0 +1,62 @@
+{
+ "id": "interfaces",
+ "num": "06",
+ "titulo": "La portada, el traductor y la administración",
+ "corto": "Interfaces",
+ "kicker": "Interfaces",
+ "lead": "Las tres vistas comparten cabecera, pie, tokens y fuentes.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "escaneo",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1.1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Portada"
+       },
+       {
+        "t": "h2",
+        "x": "Arquitectura de /"
+       },
+       {
+        "t": "comp",
+        "n": "pantalla"
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Componentes"
+       },
+       {
+        "t": "h2",
+        "x": "Botones, pares y tarjetas"
+       },
+       {
+        "t": "comp",
+        "n": "componentes"
+       },
+       {
+        "t": "nota",
+        "titulo": "El traductor primero",
+        "x": "En /traducir el panel de traducción va arriba y sin adornos: el recorrido inmersivo es solo de la portada.",
+        "tono": "azul"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

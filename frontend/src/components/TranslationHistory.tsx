@@ -82,21 +82,21 @@ export default function TranslationHistory() {
                         onClick={toggleSidebar}
                         className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg lg:hidden"
                     >
-                        <XMarkIcon className="h-5 w-5 text-gray-500" />
+                        <XMarkIcon className="h-5 w-5 text-gray-500 dark:text-tg-ceniza" />
                     </button>
                 </div>
 
                 <div className="flex-1 overflow-y-auto">
                     {!isAuthenticated() ? (
-                        <div className="p-6 text-center text-gray-500 dark:text-gray-400">
+                        <div className="p-6 text-center text-gray-500 dark:text-tg-ceniza">
                             <p className="mb-2">Inicia sesión para ver tu historial de traducciones</p>
                         </div>
                     ) : loading ? (
                         <div className="flex items-center justify-center p-8">
-                            <div className="animate-spin h-8 w-8 border-2 border-blue-500 border-t-transparent rounded-full" />
+                            <div className="animate-spin h-8 w-8 border-2 border-tg-jade border-t-transparent rounded-full" />
                         </div>
                     ) : history.length === 0 ? (
-                        <div className="p-6 text-center text-gray-500 dark:text-gray-400">
+                        <div className="p-6 text-center text-gray-500 dark:text-tg-ceniza">
                             <p>No hay traducciones guardadas</p>
                         </div>
                     ) : (
@@ -120,7 +120,7 @@ export default function TranslationHistory() {
                                             <p className="text-sm text-gray-900 dark:text-white truncate">
                                                 {item.original_text.slice(0, 50)}...
                                             </p>
-                                            <p className="text-xs text-gray-500 mt-1">
+                                            <p className="text-xs text-gray-500 mt-1 dark:text-tg-ceniza">
                                                 {item.source_lang} → {item.target_lang}
                                             </p>
                                         </div>
@@ -133,7 +133,7 @@ export default function TranslationHistory() {
                                             </button>
                                             <button
                                                 onClick={(e) => handleDelete(item.id, e)}
-                                                className="p-1.5 text-gray-400 hover:text-red-500 rounded"
+                                                className="p-1.5 text-tg-pizarra hover:text-red-500 rounded dark:text-tg-ceniza"
                                             >
                                                 <TrashIcon className="h-4 w-4" />
                                             </button>

@@ -94,7 +94,7 @@ export default function TranslationPanel() {
             <div className="flex-1 bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
                 <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
                     <LanguageSelector type="source" />
-                    <span className="text-xs text-gray-400">{sourceText.length} caracteres</span>
+                    <span className="text-xs text-tg-pizarra dark:text-tg-ceniza">{sourceText.length} caracteres</span>
                 </div>
                 <textarea
                     value={sourceText}
@@ -107,7 +107,7 @@ export default function TranslationPanel() {
                     <button
                         onClick={handleTranslate}
                         disabled={isTranslating || !sourceText.trim()}
-                        className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
+                        className="px-6 py-3 bg-tg-jade-hondo text-white font-semibold rounded-xl hover:bg-tg-jade-oscuro disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-lg hover:shadow-xl"
                     >
                         {isTranslating ? (
                             <span className="flex items-center gap-2">
@@ -142,7 +142,7 @@ export default function TranslationPanel() {
                     <button
                         onClick={handleCopy}
                         disabled={!translatedText}
-                        className="flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 disabled:opacity-50 transition-colors"
+                        className="flex items-center gap-1 text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 disabled:opacity-50 transition-colors dark:text-tg-ceniza"
                     >
                         <ClipboardDocumentIcon className="h-4 w-4" />
                         {copied ? '¡Copiado!' : 'Copiar'}
@@ -150,10 +150,10 @@ export default function TranslationPanel() {
                 </div>
                 <div className="w-full h-64 p-4 text-lg overflow-auto bg-gray-50 dark:bg-gray-900/50 dark:text-white">
                     {translatedText || (
-                        <span className="text-gray-400">La traducción aparecerá aquí...</span>
+                        <span className="text-tg-pizarra dark:text-tg-ceniza">La traducción aparecerá aquí...</span>
                     )}
                 </div>
-                <div className="p-4 border-t border-gray-200 dark:border-gray-700 flex justify-between items-center text-xs text-gray-400">
+                <div className="p-4 border-t border-gray-200 dark:border-gray-700 flex justify-between items-center text-xs text-tg-pizarra dark:text-tg-ceniza">
                     <span>Modelo: {selectedModel}</span>
                     <span>{translatedText.length} caracteres</span>
                 </div>

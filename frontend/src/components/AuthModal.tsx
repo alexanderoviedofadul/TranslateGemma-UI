@@ -176,7 +176,7 @@ function Cedula360Login({ onSuccess }: { onSuccess: () => void }) {
 
                 {!challenged && (
                     <div className="space-y-2">
-                        <p className="text-xs text-gray-500 dark:text-gray-400">
+                        <p className="text-xs text-gray-500 dark:text-tg-ceniza">
                             Elige cómo confirmar tu identidad en Cédula 360:
                         </p>
                         {methods.map((m) => (
@@ -185,7 +185,7 @@ function Cedula360Login({ onSuccess }: { onSuccess: () => void }) {
                                 type="button"
                                 onClick={() => handleChallenge(m)}
                                 disabled={loading}
-                                className="w-full text-left px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:border-blue-500 dark:hover:border-blue-400 text-sm text-gray-700 dark:text-gray-200 transition-colors disabled:opacity-50"
+                                className="w-full text-left px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 hover:border-tg-jade dark:hover:border-tg-agua text-sm text-gray-700 dark:text-gray-200 transition-colors disabled:opacity-50"
                             >
                                 {C360_METHOD_LABELS[m] || m}
                             </button>
@@ -210,7 +210,7 @@ function Cedula360Login({ onSuccess }: { onSuccess: () => void }) {
                             onChange={(e) => setCode(e.target.value)}
                             required
                             autoFocus
-                            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white tracking-widest text-center focus:ring-2 focus:ring-blue-500"
+                            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white tracking-widest text-center focus:ring-2 focus:ring-tg-jade"
                             placeholder="••••••"
                         />
                         <button
@@ -232,7 +232,7 @@ function Cedula360Login({ onSuccess }: { onSuccess: () => void }) {
                 <button
                     type="button"
                     onClick={reset2fa}
-                    className="text-xs text-gray-500 hover:underline"
+                    className="text-xs text-gray-500 hover:underline dark:text-tg-ceniza"
                 >
                     ← Volver
                 </button>
@@ -285,7 +285,7 @@ function Cedula360Login({ onSuccess }: { onSuccess: () => void }) {
                 {loading ? 'Validando…' : 'Continuar con Cédula 360'}
             </button>
 
-            <p className="text-[11px] leading-relaxed text-gray-500 dark:text-gray-400">
+            <p className="text-[11px] leading-relaxed text-gray-500 dark:text-tg-ceniza">
                 Entra con tus credenciales de <strong>cedula360.tech</strong>. Las
                 validamos de forma segura contra Cédula 360 (incluido su 2FA) y
                 nunca guardamos tu contraseña.
@@ -356,7 +356,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                             onClick={onClose}
                             className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
                         >
-                            <XMarkIcon className="h-5 w-5 text-gray-500" />
+                            <XMarkIcon className="h-5 w-5 text-gray-500 dark:text-tg-ceniza" />
                         </button>
                     </div>
 
@@ -380,7 +380,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}
                                             required
-                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-tg-jade focus:border-transparent"
                                             placeholder="Tu nombre"
                                         />
                                     </div>
@@ -395,7 +395,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         required
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-tg-jade focus:border-transparent"
                                         placeholder="tu@email.com"
                                     />
                                 </div>
@@ -410,7 +410,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                         onChange={(e) => setPassword(e.target.value)}
                                         required
                                         minLength={8}
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-tg-jade focus:border-transparent"
                                         placeholder="••••••••"
                                     />
                                 </div>
@@ -424,7 +424,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 disabled:opacity-50 transition-all duration-200"
+                                    className="w-full py-3 px-4 bg-tg-jade-hondo text-white font-semibold rounded-xl hover:bg-tg-jade-oscuro disabled:opacity-50 transition-all duration-200"
                                 >
                                     {loading ? 'Procesando...' : mode === 'login' ? 'Iniciar Sesión' : 'Crear Cuenta'}
                                 </button>
@@ -436,7 +436,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                             <>
                                 <div className="my-4 flex items-center gap-3">
                                     <div className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
-                                    <span className="text-xs text-gray-400">o</span>
+                                    <span className="text-xs text-tg-pizarra dark:text-tg-ceniza">o</span>
                                     <div className="h-px flex-1 bg-gray-200 dark:bg-gray-700" />
                                 </div>
                                 <button
@@ -462,19 +462,19 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                     setError('');
                                     setMode('login');
                                 }}
-                                className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                className="text-sm text-tg-jade-hondo dark:text-tg-agua hover:underline"
                             >
                                 ← Volver al inicio de sesión normal
                             </button>
                         ) : (
                             <button
                                 onClick={() => setMode(mode === 'login' ? 'register' : 'login')}
-                                className="text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                className="text-sm text-tg-jade-hondo dark:text-tg-agua hover:underline"
                             >
                                 {mode === 'login' ? '¿No tienes cuenta? Regístrate' : '¿Ya tienes cuenta? Inicia sesión'}
                             </button>
                         )}
-                        <p className="text-[11px] text-gray-400">
+                        <p className="text-[11px] text-tg-pizarra dark:text-tg-ceniza">
                             En alianza con{' '}
                             <a
                                 href="https://cedula360.tech"
@@ -530,11 +530,12 @@ export function UserMenu() {
             <>
                 <button
                     onClick={() => setShowAuthModal(true)}
-                    className="flex items-center justify-center p-2 sm:px-4 sm:py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
+                    className="flex items-center justify-center p-2 sm:px-4 sm:py-2 bg-tg-jade-hondo text-white text-sm font-medium rounded-lg hover:bg-tg-jade-oscuro transition-colors"
                 >
                     <span className="hidden sm:inline">Iniciar Sesión</span>
                     <span className="sm:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                        <span className="sr-only">Iniciar sesión</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                         </svg>
                     </span>
@@ -554,7 +555,7 @@ export function UserMenu() {
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="flex items-center gap-2 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
             >
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-tg-jade-hondo rounded-full flex items-center justify-center">
                     <span className="text-white text-sm font-medium">
                         {user.name?.charAt(0).toUpperCase() || user.email.charAt(0).toUpperCase()}
                     </span>
@@ -566,7 +567,7 @@ export function UserMenu() {
 
             {menuOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 py-2 z-50">
-                    <div className="px-4 py-2 text-xs text-gray-500 border-b border-gray-200 dark:border-gray-700">
+                    <div className="px-4 py-2 text-xs text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-tg-ceniza">
                         <div className="font-medium text-gray-700 dark:text-gray-300">
                             {user.name || 'Mi perfil'}
                         </div>

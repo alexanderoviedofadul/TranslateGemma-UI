@@ -1,0 +1,67 @@
+{
+ "id": "portada",
+ "num": "00",
+ "titulo": "Portada",
+ "corto": "Portada",
+ "kicker": "Manual de Marca v1.0",
+ "lead": "",
+ "paginas": [
+  {
+   "plantilla": "portada",
+   "tono": "noche",
+   "bloques": [
+    {
+     "t": "comp",
+     "n": "portada"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1.2fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Contenido"
+       },
+       {
+        "t": "h2",
+        "x": "De una orilla a otra, con su fuente"
+       },
+       {
+        "t": "comp",
+        "n": "indice"
+       }
+      ],
+      [
+       {
+        "t": "tarjeta",
+        "titulo": "Qué es este manual",
+        "x": "El primer manual de marca de TranslateGemma UI. Hasta hoy el producto usaba el azul por defecto de su plantilla, un degradado azul→índigo y un icono de catálogo {f:readme-v0}. Esta versión dibuja una identidad propia, la mide y la lleva a la portada, al traductor y a la administración.",
+        "sub": "Versión 1.0 · octubre de 2026",
+        "tono": "cian"
+       },
+       {
+        "t": "nota",
+        "titulo": "Una sola fuente",
+        "x": "Los colores, las fuentes, los logos y las capas de la portada salen de este manual: el build los copia a frontend/public/marca, que sirve la web. Si se cambia allí a mano, el audit lo detecta.",
+        "tono": "azul"
+       },
+       {
+        "t": "nota",
+        "titulo": "Nada sin fuente",
+        "x": "Cada afirmación lleva un número entre corchetes que remite a la bibliografía del capítulo 10. Si algo no tiene fuente, no está.",
+        "tono": "verde"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

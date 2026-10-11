@@ -1,0 +1,68 @@
+{
+ "id": "web",
+ "num": "09",
+ "titulo": "Rápida, legible y sin terceros",
+ "corto": "Web",
+ "kicker": "Web",
+ "lead": "Lo que la web debe cumplir en cada cambio.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "escaneo",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Reglas"
+       },
+       {
+        "t": "h2",
+        "x": "En cada despliegue"
+       },
+       {
+        "t": "lista",
+        "items": [
+         "Nada de terceros al cargar: reCAPTCHA solo al abrir el acceso aliado {f:recaptcha}.",
+         "La portada se lee sin JavaScript; el recorrido es una mejora.",
+         "Movimiento reducido: nada se anima.",
+         "Build y reinicio juntos, y nunca sin BUILD_ID {f:chunk}.",
+         "El proxy no se abre a otros modelos ni a otras rutas {f:proxy,pbproxy}."
+        ]
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Accesibilidad"
+       },
+       {
+        "t": "h2",
+        "x": "AA como mínimo"
+       },
+       {
+        "t": "p",
+        "x": "Todo par de texto de la paleta pasa AA y el foco es visible en Jade Oscuro o Espuma {f:wcag}."
+       },
+       {
+        "t": "nota",
+        "titulo": "Medición",
+        "x": "El rediseño se midió en producción antes y después con Lighthouse móvil, tres corridas por vista; el detalle está en docs/rediseno-2026-10 {f:medicion}.",
+        "tono": "verde"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

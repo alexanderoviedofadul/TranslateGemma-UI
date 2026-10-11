@@ -1,0 +1,177 @@
+{
+ "id": "producto",
+ "num": "02",
+ "titulo": "Cinco paradas, del texto al texto",
+ "corto": "Producto",
+ "kicker": "Producto",
+ "lead": "Lo que hace el producto, comprobado contra el código: idiomas, modelo, límites y vistas.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "isotipo-oscuro",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Cómo funciona"
+    },
+    {
+     "t": "h2",
+     "x": "Del texto de origen al de destino"
+    },
+    {
+     "t": "comp",
+     "n": "pilares"
+    },
+    {
+     "t": "eyebrow",
+     "x": "Idiomas"
+    },
+    {
+     "t": "h2",
+     "x": "53 idiomas en el selector"
+    },
+    {
+     "t": "comp",
+     "n": "idiomas"
+    },
+    {
+     "t": "nota",
+     "titulo": "53, no 55",
+     "x": "La documentación del modelo declara 55 idiomas {f:modelo-doc}; el selector ofrece 53 {f:lenguas}. La marca dice 53, que es lo que el usuario puede elegir.",
+     "tono": "ambar"
+    }
+   ],
+   "densa": true
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Límites"
+       },
+       {
+        "t": "h2",
+        "x": "Lo que el servicio no deja hacer"
+       },
+       {
+        "t": "comp",
+        "n": "limites"
+       },
+       {
+        "t": "eyebrow",
+        "x": "Petición"
+       },
+       {
+        "t": "h3",
+        "x": "Lo que el navegador envía al modelo"
+       },
+       {
+        "t": "comp",
+        "n": "campos"
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Vistas"
+       },
+       {
+        "t": "h2",
+        "x": "Tres rutas y un acceso aliado"
+       },
+       {
+        "t": "comp",
+        "n": "vistas"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Lo que no promete"
+       },
+       {
+        "t": "h2",
+        "x": "Lo que la marca no dice"
+       },
+       {
+        "t": "lista",
+        "items": [
+         "No dice «100 % local» ni «sin internet»: es un servicio web; el texto viaja cifrado hasta este servidor {f:readme-v0}.",
+         "No ofrece elegir entre 4B, 12B y 27B: hay un solo modelo instalado {f:ollama-show}.",
+         "No dice «55 idiomas»: el selector tiene 53 {f:lenguas}.",
+         "No da cifras de calidad: la traducción es un borrador que conviene revisar."
+        ],
+        "corrige": true
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Lo que sí garantiza el código"
+       },
+       {
+        "t": "h2",
+        "x": "Comprobado en cada build"
+       },
+       {
+        "t": "tabla",
+        "cab": [
+         "Afirmación",
+         "Dónde se comprueba"
+        ],
+        "filas": [
+         [
+          "53 idiomas",
+          "languages.ts {f:lenguas}"
+         ],
+         [
+          "Modelo por defecto translategemma:latest",
+          "services/ollama.ts {f:servicio}"
+         ],
+         [
+          "Solo modelos locales",
+          "proxy /ollama {f:proxy}"
+         ],
+         [
+          "8 MB y 30 por minuto",
+          "proxy /ollama {f:proxy}"
+         ],
+         [
+          "Ctrl/Cmd + Enter",
+          "TranslationPanel.tsx {f:panel}"
+         ]
+        ],
+        "c": "compacta"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

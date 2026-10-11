@@ -1,0 +1,142 @@
+{
+ "colores": {
+  "tg-agua": {
+   "hex": "#2DD4BF",
+   "nombre": "Agua",
+   "origen": "deriv",
+   "uso": "La orilla de origen sobre oscuro: el texto que entra. Sobre Noche: 10,28 : 1."
+  },
+  "tg-ambar": {
+   "hex": "#F59E0B",
+   "nombre": "Ámbar",
+   "origen": "deriv",
+   "uso": "La orilla de destino sobre oscuro: el texto traducido. Sobre Noche: 8,91 : 1. Nunca como fondo de texto blanco."
+  },
+  "tg-ambar-hondo": {
+   "hex": "#B45309",
+   "nombre": "Ámbar Hondo",
+   "origen": "deriv",
+   "uso": "El ámbar cuando va en texto sobre claro (5,02 : 1 sobre blanco)."
+  },
+  "tg-borde": {
+   "hex": "#CBD5E1",
+   "nombre": "Borde",
+   "origen": "convencion",
+   "uso": "Bordes de campos y tarjetas sobre claro."
+  },
+  "tg-bruma": {
+   "hex": "#F0FDFA",
+   "nombre": "Bruma",
+   "origen": "deriv",
+   "uso": "Fondo de notas, del panel de traducción y del código sobre claro, con texto Tinta o Jade Hondo."
+  },
+  "tg-cauce": {
+   "hex": "#101A20",
+   "nombre": "Cauce",
+   "origen": "deriv",
+   "uso": "Superficie de tarjetas y paneles sobre Noche."
+  },
+  "tg-ceniza": {
+   "hex": "#94A3B8",
+   "nombre": "Ceniza",
+   "origen": "convencion",
+   "uso": "Texto secundario sobre oscuro (7,47 : 1 sobre Noche)."
+  },
+  "tg-error": {
+   "hex": "#B91C1C",
+   "nombre": "Error",
+   "origen": "convencion",
+   "uso": "Errores y avisos de límite. Siempre con icono y palabra."
+  },
+  "tg-espuma": {
+   "hex": "#99F6E4",
+   "nombre": "Espuma",
+   "origen": "deriv",
+   "uso": "Enlaces y texto de acento sobre oscuro. Sobre Noche: 15,18 : 1."
+  },
+  "tg-humo": {
+   "hex": "#E2E8F0",
+   "nombre": "Humo",
+   "origen": "convencion",
+   "uso": "Texto principal sobre oscuro (15,53 : 1 sobre Noche)."
+  },
+  "tg-jade": {
+   "hex": "#0F766E",
+   "nombre": "Jade",
+   "origen": "deriv",
+   "uso": "El cuadrado del símbolo y los gráficos de marca. Con texto blanco encima: 5,47 : 1 (AA)."
+  },
+  "tg-jade-hondo": {
+   "hex": "#115E59",
+   "nombre": "Jade Hondo",
+   "origen": "deriv",
+   "uso": "Botones con texto blanco (7,58 : 1) y enlaces y acentos de texto sobre claro."
+  },
+  "tg-jade-oscuro": {
+   "hex": "#134E4A",
+   "nombre": "Jade Oscuro",
+   "origen": "deriv",
+   "uso": "Estado pulsado de los botones y bordes de foco sobre claro."
+  },
+  "tg-linea": {
+   "hex": "#27373F",
+   "nombre": "Línea",
+   "origen": "deriv",
+   "uso": "Bordes y separadores sobre oscuro."
+  },
+  "tg-niebla": {
+   "hex": "#F1F5F9",
+   "nombre": "Niebla",
+   "origen": "convencion",
+   "uso": "Fondo de secciones atenuadas sobre claro."
+  },
+  "tg-noche": {
+   "hex": "#0A1014",
+   "nombre": "Noche",
+   "origen": "deriv",
+   "uso": "Fondo de la portada, del recorrido y de la imagen para compartir."
+  },
+  "tg-ok": {
+   "hex": "#15803D",
+   "nombre": "Correcto",
+   "origen": "convencion",
+   "uso": "Estado correcto (copiado, guardado). Siempre con icono y palabra."
+  },
+  "tg-pizarra": {
+   "hex": "#475569",
+   "nombre": "Pizarra",
+   "origen": "convencion",
+   "uso": "Texto secundario sobre claro (7,58 : 1 sobre blanco)."
+  },
+  "tg-ribera": {
+   "hex": "#18262E",
+   "nombre": "Ribera",
+   "origen": "deriv",
+   "uso": "Superficies elevadas sobre Noche: barras y cabeceras."
+  },
+  "tg-tinta": {
+   "hex": "#0F172A",
+   "nombre": "Tinta",
+   "origen": "convencion",
+   "uso": "Texto principal sobre claro y el logotipo sobre claro."
+  }
+ },
+ "marca": "TranslateGemma",
+ "orillas": {
+  "DESTINO": {
+   "fondo": "#F59E0B",
+   "texto": "#0A1014"
+  },
+  "ORIGEN": {
+   "fondo": "#2DD4BF",
+   "texto": "#0A1014"
+  }
+ },
+ "tipografia": {
+  "codigo": "JetBrains Mono",
+  "display": "Inter",
+  "logotipo": "Inter 700",
+  "texto": "Inter"
+ },
+ "version": "1.0.0"
+}

@@ -1,0 +1,204 @@
+{
+ "id": "color",
+ "num": "04",
+ "titulo": "Jade para la marca, agua y ámbar para las orillas",
+ "corto": "Color",
+ "kicker": "Color",
+ "lead": "Veinte colores cerrados, cada uno con su uso y su contraste calculado {f:wcag}.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "paleta-mini",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Marca"
+    },
+    {
+     "t": "h2",
+     "x": "El Jade y las dos orillas"
+    },
+    {
+     "t": "comp",
+     "n": "paleta",
+     "ids": [
+      "tg-jade",
+      "tg-jade-hondo",
+      "tg-jade-oscuro",
+      "tg-agua",
+      "tg-espuma",
+      "tg-bruma"
+     ]
+    },
+    {
+     "t": "comp",
+     "n": "degradados"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Superficies oscuras"
+    },
+    {
+     "t": "h2",
+     "x": "Noche, cauce y ribera"
+    },
+    {
+     "t": "comp",
+     "n": "paleta",
+     "ids": [
+      "tg-noche",
+      "tg-cauce",
+      "tg-ribera",
+      "tg-linea",
+      "tg-ceniza",
+      "tg-humo"
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Claro y estados"
+    },
+    {
+     "t": "h2",
+     "x": "Texto, fondos y estados"
+    },
+    {
+     "t": "comp",
+     "n": "paleta",
+     "ids": [
+      "tg-tinta",
+      "tg-pizarra",
+      "tg-niebla",
+      "tg-borde",
+      "tg-ambar",
+      "tg-ambar-hondo",
+      "tg-ok",
+      "tg-error"
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Contraste"
+    },
+    {
+     "t": "h2",
+     "x": "Cada par de uso, medido"
+    },
+    {
+     "t": "comp",
+     "n": "contraste",
+     "pares": [
+      [
+       "#FFFFFF",
+       "tg-jade",
+       "Texto blanco sobre el símbolo y botones grandes"
+      ],
+      [
+       "#FFFFFF",
+       "tg-jade-hondo",
+       "Botones con texto blanco"
+      ],
+      [
+       "tg-tinta",
+       "#FFFFFF",
+       "Texto principal sobre claro"
+      ],
+      [
+       "tg-pizarra",
+       "#FFFFFF",
+       "Texto secundario sobre claro"
+      ],
+      [
+       "tg-jade-hondo",
+       "tg-bruma",
+       "Enlaces sobre el panel de traducción"
+      ],
+      [
+       "tg-ambar-hondo",
+       "#FFFFFF",
+       "Texto de destino sobre claro"
+      ],
+      [
+       "tg-humo",
+       "tg-noche",
+       "Texto sobre oscuro"
+      ],
+      [
+       "tg-ceniza",
+       "tg-noche",
+       "Texto secundario sobre oscuro"
+      ],
+      [
+       "tg-agua",
+       "tg-noche",
+       "Orilla de origen sobre oscuro"
+      ],
+      [
+       "tg-ambar",
+       "tg-noche",
+       "Orilla de destino sobre oscuro"
+      ],
+      [
+       "tg-espuma",
+       "tg-cauce",
+       "Enlaces sobre tarjetas oscuras"
+      ],
+      [
+       "#FFFFFF",
+       "tg-error",
+       "Avisos de error"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Lo que sale"
+    },
+    {
+     "t": "h2",
+     "x": "Colores retirados"
+    },
+    {
+     "t": "comp",
+     "n": "retirados"
+    },
+    {
+     "t": "nota",
+     "titulo": "Por qué",
+     "x": "El azul de antes no lo eligió nadie: era el de la plantilla. Además de no llegar a AA con texto blanco, era el azul que asocia cualquiera a Google, dueño de la marca del modelo.",
+     "tono": "ambar"
+    }
+   ]
+  }
+ ]
+}

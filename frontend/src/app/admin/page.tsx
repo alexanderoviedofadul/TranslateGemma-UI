@@ -17,6 +17,7 @@ import { useEffect, useState } from 'react';
 import { pb, getCurrentUser } from '@/services/pocketbase';
 import AuthModal from '@/components/AuthModal';
 import SiteFooter from '@/components/layout/SiteFooter';
+import Logo from '@/components/marca/Logo';
 
 interface PbUser {
     id: string;
@@ -67,38 +68,36 @@ export default function AdminPage() {
     // ---------- Sin sesión: pantalla de acceso ----------
     if (!user) {
         return (
-            <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-950">
-                <div className="flex-1 flex items-center justify-center p-6">
+            <div className="min-h-screen flex flex-col bg-tg-niebla dark:bg-tg-noche">
+                <main className="flex-1 flex items-center justify-center p-6">
                     <div className="max-w-md w-full text-center bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-100 dark:border-gray-800">
-                        <div className="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-5">
-                            <span className="text-white font-bold text-xl">T</span>
-                        </div>
+                        <div className="flex justify-center mb-5"><Logo soloSimbolo tam={56} /></div>
                         <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                             Administración
                         </h1>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">
+                        <p className="text-gray-600 dark:text-tg-ceniza mb-6 text-sm">
                             Necesitas iniciar sesión para acceder al panel.
                             Puedes usar tu cuenta o continuar con Cédula 360.
                         </p>
                         <button
                             onClick={() => setShowAuth(true)}
-                            className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all"
+                            className="w-full px-4 py-3 bg-tg-jade-hondo text-white font-semibold rounded-xl hover:bg-tg-jade-oscuro transition-all"
                         >
                             Iniciar sesión
                         </button>
                         <div className="mt-4 flex items-center justify-center gap-4 text-sm">
-                            <a href="/" className="text-gray-500 hover:text-blue-500">
+                            <a href="/" className="text-gray-500 hover:text-tg-jade-hondo dark:hover:text-tg-agua dark:text-tg-ceniza">
                                 ← Inicio
                             </a>
                             <a
                                 href="/traducir"
-                                className="text-blue-600 hover:underline"
+                                className="text-tg-jade-hondo hover:underline dark:text-tg-agua"
                             >
                                 Ir al traductor
                             </a>
                         </div>
                     </div>
-                </div>
+                </main>
                 <AuthModal
                     isOpen={showAuth}
                     onClose={() => setShowAuth(false)}
@@ -114,13 +113,11 @@ export default function AdminPage() {
 
     // ---------- Con sesión ----------
     return (
-        <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-950">
+        <div className="min-h-screen flex flex-col bg-tg-niebla dark:bg-tg-noche">
             <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 sticky top-0 z-30">
                 <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
                     <a href="/" className="flex items-center gap-2">
-                        <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                            <span className="text-white font-bold">T</span>
-                        </div>
+                        <Logo soloSimbolo tam={36} />
                         <span className="font-bold text-gray-900 dark:text-white">
                             Administración
                         </span>
@@ -128,13 +125,13 @@ export default function AdminPage() {
                     <nav className="flex items-center gap-3 text-sm">
                         <a
                             href="/"
-                            className="text-gray-500 hover:text-blue-500"
+                            className="text-gray-500 hover:text-tg-jade-hondo dark:hover:text-tg-agua dark:text-tg-ceniza"
                         >
                             Inicio
                         </a>
                         <a
                             href="/traducir"
-                            className="text-blue-600 hover:underline"
+                            className="text-tg-jade-hondo hover:underline dark:text-tg-agua"
                         >
                             Traductor →
                         </a>
@@ -151,25 +148,25 @@ export default function AdminPage() {
                         </h2>
                         <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                             <div>
-                                <dt className="text-gray-500">Nombre</dt>
+                                <dt className="text-gray-500 dark:text-tg-ceniza">Nombre</dt>
                                 <dd className="text-gray-900 dark:text-white">
                                     {user.name || '—'}
                                 </dd>
                             </div>
                             <div>
-                                <dt className="text-gray-500">Email</dt>
+                                <dt className="text-gray-500 dark:text-tg-ceniza">Email</dt>
                                 <dd className="text-gray-900 dark:text-white">
                                     {user.email}
                                 </dd>
                             </div>
                             <div>
-                                <dt className="text-gray-500">Rol</dt>
+                                <dt className="text-gray-500 dark:text-tg-ceniza">Rol</dt>
                                 <dd className="text-gray-900 dark:text-white">
                                     {isAdmin ? 'Administrador' : 'Usuario'}
                                 </dd>
                             </div>
                             <div>
-                                <dt className="text-gray-500">Sesión activa</dt>
+                                <dt className="text-gray-500 dark:text-tg-ceniza">Sesión activa</dt>
                                 <dd className="text-gray-900 dark:text-white">
                                     {pb.authStore.isValid ? 'Sí' : 'No'}
                                 </dd>
@@ -200,7 +197,7 @@ export default function AdminPage() {
                             <div className="overflow-x-auto">
                                 <table className="w-full text-sm min-w-[520px]">
                                     <thead>
-                                        <tr className="text-left text-gray-500 border-b border-gray-200 dark:border-gray-700">
+                                        <tr className="text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-tg-ceniza">
                                             <th className="py-2 pr-4">Email</th>
                                             <th className="py-2 pr-4">Nombre</th>
                                             <th className="py-2 pr-4">Rol</th>
@@ -230,7 +227,7 @@ export default function AdminPage() {
                                                 <td className="py-2 pr-4">
                                                     {u.verified ? '✓' : '—'}
                                                 </td>
-                                                <td className="py-2 text-gray-500">
+                                                <td className="py-2 text-gray-500 dark:text-tg-ceniza">
                                                     {new Date(
                                                         u.created
                                                     ).toLocaleDateString()}
@@ -240,7 +237,7 @@ export default function AdminPage() {
                                     </tbody>
                                 </table>
                             </div>
-                            <p className="mt-4 text-xs text-gray-400">
+                            <p className="mt-4 text-xs text-tg-pizarra dark:text-tg-ceniza">
                                 Gestión avanzada (CRUD completo, roles) vía
                                 PocketBase Admin UI.
                             </p>
@@ -250,13 +247,13 @@ export default function AdminPage() {
                             <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                                 Acceso limitado
                             </h2>
-                            <p className="text-sm text-gray-600 dark:text-gray-400">
+                            <p className="text-sm text-gray-600 dark:text-tg-ceniza">
                                 Tienes acceso de <strong>usuario</strong>. La
                                 gestión de usuarios y sesiones está reservada a
                                 administradores. Puedes seguir usando el{' '}
                                 <a
                                     href="/traducir"
-                                    className="text-blue-600 hover:underline"
+                                    className="text-tg-jade-hondo hover:underline dark:text-tg-agua"
                                 >
                                     traductor
                                 </a>{' '}

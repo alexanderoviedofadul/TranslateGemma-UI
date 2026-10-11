@@ -41,7 +41,7 @@ export default function ModelSelector() {
 
     if (!ollamaConnected) {
         return (
-            <div className="text-center text-sm text-gray-500 dark:text-gray-400 py-2">
+            <div className="text-center text-sm text-gray-500 dark:text-tg-ceniza py-2">
                 Conecta Ollama para ver modelos disponibles
             </div>
         );
@@ -50,7 +50,7 @@ export default function ModelSelector() {
     if (loading) {
         return (
             <div className="flex items-center justify-center py-2">
-                <div className="animate-spin h-5 w-5 border-2 border-blue-500 border-t-transparent rounded-full" />
+                <div className="animate-spin h-5 w-5 border-2 border-tg-jade border-t-transparent rounded-full" />
             </div>
         );
     }
@@ -62,20 +62,20 @@ export default function ModelSelector() {
             </label>
             <div className="grid grid-cols-1 gap-2">
                 {models.length === 0 ? (
-                    <p className="text-sm text-gray-500">No se encontraron modelos de traducción</p>
+                    <p className="text-sm text-gray-500 dark:text-tg-ceniza">No se encontraron modelos de traducción</p>
                 ) : (
                     models.map((model) => (
                         <button
                             key={model.name}
                             onClick={() => setSelectedModel(model.name)}
                             className={`text-left p-3 rounded-lg border transition-all ${selectedModel === model.name
-                                    ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/30'
+                                    ? 'border-tg-jade bg-tg-bruma dark:bg-tg-ribera'
                                     : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
                                 }`}
                         >
                             <div className="flex items-center justify-between">
                                 <span className="font-medium text-gray-900 dark:text-white">{model.name}</span>
-                                <span className="text-xs text-gray-500">{formatSize(model.size)}</span>
+                                <span className="text-xs text-gray-500 dark:text-tg-ceniza">{formatSize(model.size)}</span>
                             </div>
                         </button>
                     ))

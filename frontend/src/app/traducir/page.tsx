@@ -8,32 +8,34 @@ import ModelSelector from '@/components/ModelSelector';
 import ImageTranslation from '@/components/ImageTranslation';
 import TranslationHistory from '@/components/TranslationHistory';
 import SiteFooter from '@/components/layout/SiteFooter';
+import { LANGUAGES } from '@/lib/languages';
 
 export const metadata = {
     title: 'Traductor — TranslateGemma',
-    description: 'Traduce entre 55 idiomas con TranslateGemma, 100% local.',
+    description: `Traduzca texto e imágenes entre ${LANGUAGES.length} idiomas con un modelo abierto que corre en este servidor.`,
+    alternates: { canonical: '/traducir' },
 };
 
 export default function TraducirPage() {
     return (
-        <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950">
+        <div className="min-h-screen flex flex-col bg-tg-niebla dark:bg-tg-noche">
             <Header />
             <TranslationHistory />
 
             <main className="flex-1 py-8">
                 <div className="text-center mb-8 px-4">
-                    <nav className="text-xs text-gray-400 mb-4">
-                        <a href="/" className="hover:text-blue-500">
+                    <nav aria-label="Ruta" className="text-xs text-tg-pizarra dark:text-tg-ceniza mb-4">
+                        <a href="/" className="hover:text-tg-jade-hondo dark:hover:text-tg-agua">
                             Inicio
                         </a>{' '}
-                        / <span className="text-gray-600 dark:text-gray-300">Traductor</span>
+                        / <span aria-current="page" className="text-tg-tinta dark:text-tg-humo">Traductor</span>
                     </nav>
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-                        Traducción Privada con IA
-                    </h2>
-                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                        Traduce entre 55 idiomas usando TranslateGemma de Google,
-                        ejecutándose 100% en infraestructura local.
+                    <h1 className="text-3xl md:text-4xl font-bold text-tg-tinta dark:text-tg-humo mb-3">
+                        De una orilla a otra
+                    </h1>
+                    <p className="text-tg-pizarra dark:text-tg-ceniza max-w-2xl mx-auto">
+                        {LANGUAGES.length} idiomas. Traduce translategemma, un modelo abierto que corre con Ollama en
+                        este servidor: el texto no se envía a ningún proveedor de IA.
                     </p>
                 </div>
 

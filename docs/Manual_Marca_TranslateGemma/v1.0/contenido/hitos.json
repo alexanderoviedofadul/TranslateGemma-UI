@@ -1,0 +1,11 @@
+{
+ "_nota": "Cronología del capítulo 01. Cada hito lleva su fuente; el audit lo comprueba.",
+ "hitos": [
+  {"fecha": "18-01-2026", "acto": "Primera versión", "resumen": "Una interfaz para el modelo de traducción abierto de Google, servida con Ollama.", "papel": "producto", "fuente": "git-inicio"},
+  {"fecha": "16-05-2026", "acto": "Alianza", "resumen": "«Continuar con Cédula 360», con su segundo factor, y roles.", "papel": "producto", "fuente": "git-alianza"},
+  {"fecha": "17-05-2026", "acto": "Portada", "resumen": "La herramienta pasa a /traducir y la raíz presenta el proyecto.", "papel": "producto", "fuente": "git-landing"},
+  {"fecha": "28-05-2026", "acto": "Build y reinicio, juntos", "resumen": "Un build sin reinicio servía piezas huérfanas.", "papel": "producto", "fuente": "chunk"},
+  {"fecha": "09-08-2026", "acto": "Despliegue reparado", "resumen": "El webhook llevaba tiempo rechazando a GitHub.", "papel": "producto", "fuente": "webhook"},
+  {"fecha": "11-10-2026", "acto": "Marca v1.0", "resumen": "Identidad propia, proxy cerrado a los modelos locales y la traducción de nuevo en marcha.", "papel": "marca", "fuente": "medicion"}
+ ]
+}

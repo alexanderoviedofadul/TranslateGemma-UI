@@ -1,0 +1,28 @@
+/* GENERADO por docs/Manual_Marca_TranslateGemma/v1.0/scripts/build_v1.py — no editar a mano.
+   Paleta cerrada de TranslateGemma v1.0: 20 colores. El Jade es el color de la marca; Agua y Ámbar
+   son las dos orillas (origen y destino); las superficies oscuras salen de la noche del recorrido.
+   El contraste de cada par de uso está calculado en el capítulo 04 del manual. */
+:root {
+  --tg-jade: #0F766E;  /* Jade · v1.0 */
+  --tg-jade-hondo: #115E59;  /* Jade Hondo · v1.0 */
+  --tg-jade-oscuro: #134E4A;  /* Jade Oscuro · v1.0 */
+  --tg-agua: #2DD4BF;  /* Agua · v1.0 */
+  --tg-espuma: #99F6E4;  /* Espuma · v1.0 */
+  --tg-bruma: #F0FDFA;  /* Bruma · v1.0 */
+  --tg-ambar: #F59E0B;  /* Ámbar · v1.0 */
+  --tg-ambar-hondo: #B45309;  /* Ámbar Hondo · v1.0 */
+  --tg-noche: #0A1014;  /* Noche · v1.0 */
+  --tg-cauce: #101A20;  /* Cauce · v1.0 */
+  --tg-ribera: #18262E;  /* Ribera · v1.0 */
+  --tg-linea: #27373F;  /* Línea · v1.0 */
+  --tg-ceniza: #94A3B8;  /* Ceniza · interfaz */
+  --tg-humo: #E2E8F0;  /* Humo · interfaz */
+  --tg-tinta: #0F172A;  /* Tinta · interfaz */
+  --tg-pizarra: #475569;  /* Pizarra · interfaz */
+  --tg-niebla: #F1F5F9;  /* Niebla · interfaz */
+  --tg-borde: #CBD5E1;  /* Borde · interfaz */
+  --tg-ok: #15803D;  /* Correcto · interfaz */
+  --tg-error: #B91C1C;  /* Error · interfaz */
+  --f-display: 'Inter', system-ui, sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, monospace;
+}

@@ -1,0 +1,79 @@
+{
+ "id": "tono",
+ "num": "08",
+ "titulo": "Claro, breve y sin promesas",
+ "corto": "Tono",
+ "kicker": "Tono",
+ "lead": "La marca habla como el traductor: dice lo que hace y lo que no.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "lema",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Principios"
+       },
+       {
+        "t": "h2",
+        "x": "Cómo habla"
+       },
+       {
+        "t": "lista",
+        "items": [
+         "Usted, en español; frases cortas.",
+         "Dice dónde ocurre la traducción: en este servidor.",
+         "Una traducción es un borrador: se revisa antes de firmar nada.",
+         "Nombra el modelo por su nombre y aclara que es de Google."
+        ]
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Ejemplos"
+       },
+       {
+        "t": "tabla",
+        "cab": [
+         "Así no",
+         "Así sí"
+        ],
+        "filas": [
+         [
+          "Traducción 100 % privada y sin internet",
+          "El texto se traduce en este servidor con un modelo local"
+         ],
+         [
+          "55 idiomas",
+          "53 idiomas en el selector"
+         ],
+         [
+          "Elige 4B, 12B o 27B",
+          "Un modelo instalado: translategemma"
+         ],
+         [
+          "La mejor traducción del mercado",
+          "Un borrador para revisar"
+         ]
+        ],
+        "c": "compacta"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

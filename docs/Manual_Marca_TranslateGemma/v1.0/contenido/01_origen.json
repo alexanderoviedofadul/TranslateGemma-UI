@@ -1,0 +1,90 @@
+{
+ "id": "origen",
+ "num": "01",
+ "titulo": "Un traductor que no saca el texto de casa",
+ "corto": "Origen",
+ "kicker": "Origen",
+ "lead": "TranslateGemma UI es la interfaz web de un modelo de traducción abierto, servido con Ollama en el mismo servidor que la página.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "escaneo",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Qué es"
+       },
+       {
+        "t": "h2",
+        "x": "Una interfaz para un modelo abierto"
+       },
+       {
+        "t": "p",
+        "x": "TranslateGemma es una colección de modelos de traducción abiertos de Google DeepMind, construidos sobre Gemma 3 {f:modelo-doc}. Este producto no es ese modelo: es la página que lo pone a trabajar. Escribe el texto, elige los idiomas y recibe la traducción mientras se genera {f:servicio}."
+       },
+       {
+        "t": "p",
+        "x": "En este servidor hay instalado un solo modelo de traducción: translategemma:latest, de 4,3B parámetros, que además lee imágenes {f:ollama-show}."
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "El nombre"
+       },
+       {
+        "t": "h2",
+        "x": "Un nombre que no es de Google"
+       },
+       {
+        "t": "p",
+        "x": "TranslateGemma y Gemma son marcas de Google. El producto las usa porque describen el modelo que ejecuta, bajo los términos de uso de Gemma {f:licencia}; no está afiliado a Google ni lo representa."
+       },
+       {
+        "t": "nota",
+        "titulo": "Regla de marca",
+        "x": "La identidad no imita a Google: ni su azul, ni sus cuatro colores, ni su tipografía, ni la forma de sus iconos de traducción. El símbolo y la paleta de esta versión se dibujaron para separarse de ellos.",
+        "tono": "ambar"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Cronología"
+    },
+    {
+     "t": "h2",
+     "x": "De la primera versión a la marca"
+    },
+    {
+     "t": "comp",
+     "n": "cronologia"
+    },
+    {
+     "t": "nota",
+     "titulo": "Lo que cambió el 11 de octubre",
+     "x": "El proxy de traducción apuntaba al Ollama público del servidor, que exige token desde el pentest del 10-oct: toda traducción respondía 401 {f:medicion,pentest}. Al pasarlo al Ollama local se cerró a los modelos de traducción, porque el mismo daemon tiene registrados los modelos de pago de la nube {f:proxy}.",
+     "tono": "verde"
+    }
+   ]
+  }
+ ]
+}

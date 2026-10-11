@@ -5,6 +5,7 @@ import { MoonIcon, SunIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import { useAppStore } from '@/stores/appStore';
 import { checkOllamaStatus } from '@/services/ollama';
 import { UserMenu } from './AuthModal';
+import Logo from '@/components/marca/Logo';
 
 export default function Header() {
     const { theme, setTheme, ollamaConnected, setOllamaConnected, toggleSidebar } = useAppStore();
@@ -59,17 +60,8 @@ export default function Header() {
                     </button>
 
                     <a href="/" className="flex items-center gap-2 sm:gap-3 min-w-0">
-                        <div className="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg shrink-0">
-                            <span className="text-white font-bold text-lg">T</span>
-                        </div>
-                        <div className="hidden sm:block min-w-0">
-                            <h1 className="font-bold text-gray-900 dark:text-white truncate">
-                                TranslateGemma
-                            </h1>
-                            <p className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                                Traducción privada con IA
-                            </p>
-                        </div>
+                        <span className="sm:hidden"><Logo soloSimbolo tam={36} /><span className="sr-only">TranslateGemma</span></span>
+                        <span className="hidden sm:block min-w-0"><Logo tam={38} lema="Traducción en este servidor" /></span>
                     </a>
                 </div>
 

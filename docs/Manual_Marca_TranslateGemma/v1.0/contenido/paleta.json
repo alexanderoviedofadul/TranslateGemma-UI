@@ -1,0 +1,30 @@
+{
+ "_nota": "Paleta cerrada de TranslateGemma v1.0. La de antes era el azul de Tailwind con un degradado azul→índigo, demasiado cerca del azul de las marcas de Google. Todo se fija en la v1.0 y su contraste se calcula en el build.",
+ "colores": {
+  "tg-jade": {"nombre": "Jade", "hex": "#0F766E", "origen": "deriv", "uso": "El cuadrado del símbolo y los gráficos de marca. Con texto blanco encima: 5,47 : 1 (AA)."},
+  "tg-jade-hondo": {"nombre": "Jade Hondo", "hex": "#115E59", "origen": "deriv", "uso": "Botones con texto blanco (7,58 : 1) y enlaces y acentos de texto sobre claro."},
+  "tg-jade-oscuro": {"nombre": "Jade Oscuro", "hex": "#134E4A", "origen": "deriv", "uso": "Estado pulsado de los botones y bordes de foco sobre claro."},
+  "tg-agua": {"nombre": "Agua", "hex": "#2DD4BF", "origen": "deriv", "uso": "La orilla de origen sobre oscuro: el texto que entra. Sobre Noche: 10,28 : 1."},
+  "tg-espuma": {"nombre": "Espuma", "hex": "#99F6E4", "origen": "deriv", "uso": "Enlaces y texto de acento sobre oscuro. Sobre Noche: 15,18 : 1."},
+  "tg-bruma": {"nombre": "Bruma", "hex": "#F0FDFA", "origen": "deriv", "uso": "Fondo de notas, del panel de traducción y del código sobre claro, con texto Tinta o Jade Hondo."},
+  "tg-ambar": {"nombre": "Ámbar", "hex": "#F59E0B", "origen": "deriv", "uso": "La orilla de destino sobre oscuro: el texto traducido. Sobre Noche: 8,91 : 1. Nunca como fondo de texto blanco."},
+  "tg-ambar-hondo": {"nombre": "Ámbar Hondo", "hex": "#B45309", "origen": "deriv", "uso": "El ámbar cuando va en texto sobre claro (5,02 : 1 sobre blanco)."},
+  "tg-noche": {"nombre": "Noche", "hex": "#0A1014", "origen": "deriv", "uso": "Fondo de la portada, del recorrido y de la imagen para compartir."},
+  "tg-cauce": {"nombre": "Cauce", "hex": "#101A20", "origen": "deriv", "uso": "Superficie de tarjetas y paneles sobre Noche."},
+  "tg-ribera": {"nombre": "Ribera", "hex": "#18262E", "origen": "deriv", "uso": "Superficies elevadas sobre Noche: barras y cabeceras."},
+  "tg-linea": {"nombre": "Línea", "hex": "#27373F", "origen": "deriv", "uso": "Bordes y separadores sobre oscuro."},
+  "tg-ceniza": {"nombre": "Ceniza", "hex": "#94A3B8", "origen": "convencion", "uso": "Texto secundario sobre oscuro (7,47 : 1 sobre Noche)."},
+  "tg-humo": {"nombre": "Humo", "hex": "#E2E8F0", "origen": "convencion", "uso": "Texto principal sobre oscuro (15,53 : 1 sobre Noche)."},
+  "tg-tinta": {"nombre": "Tinta", "hex": "#0F172A", "origen": "convencion", "uso": "Texto principal sobre claro y el logotipo sobre claro."},
+  "tg-pizarra": {"nombre": "Pizarra", "hex": "#475569", "origen": "convencion", "uso": "Texto secundario sobre claro (7,58 : 1 sobre blanco)."},
+  "tg-niebla": {"nombre": "Niebla", "hex": "#F1F5F9", "origen": "convencion", "uso": "Fondo de secciones atenuadas sobre claro."},
+  "tg-borde": {"nombre": "Borde", "hex": "#CBD5E1", "origen": "convencion", "uso": "Bordes de campos y tarjetas sobre claro."},
+  "tg-ok": {"nombre": "Correcto", "hex": "#15803D", "origen": "convencion", "uso": "Estado correcto (copiado, guardado). Siempre con icono y palabra."},
+  "tg-error": {"nombre": "Error", "hex": "#B91C1C", "origen": "convencion", "uso": "Errores y avisos de límite. Siempre con icono y palabra."}
+ },
+ "retirados": [
+  {"hex": "#3B82F6", "nombre": "Azul (theme-color y manifest)", "motivo": "Azul 500 de Tailwind, sin elegir: con texto blanco da 3,68 : 1 (no llega a AA) y es el azul de las marcas de Google {f:readme-v0}", "sustituto": "Jade"},
+  {"hex": "#2563EB", "nombre": "Degradado azul de botones y titular", "motivo": "Mitad de un degradado azul→índigo que repetía la estética por defecto de las plantillas y del azul de Google {f:readme-v0}", "sustituto": "Jade Hondo"},
+  {"hex": "#4F46E5", "nombre": "Índigo del degradado", "motivo": "La otra mitad del degradado; el texto con degradado (bg-clip-text) no tiene un contraste medible {f:readme-v0}", "sustituto": "Jade Hondo"}
+ ]
+}

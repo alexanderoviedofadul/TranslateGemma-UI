@@ -1,0 +1,200 @@
+{
+ "id": "simbolo",
+ "num": "03",
+ "titulo": "Una línea que vuelve traducida",
+ "corto": "Símbolo",
+ "kicker": "Símbolo",
+ "lead": "Un cuadrado Jade con un solo trazo blanco: la línea de origen gira y vuelve como línea de destino.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "isotipo-oscuro",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Anatomía"
+    },
+    {
+     "t": "h2",
+     "x": "Cuatro piezas"
+    },
+    {
+     "t": "comp",
+     "n": "anatomia"
+    },
+    {
+     "t": "nota",
+     "titulo": "Por qué no un globo ni un par de letras",
+     "x": "Son los iconos de catálogo de cualquier traductor y el de Google Translate es justamente un par de cuadros con letras. El retorno dice lo que hace este producto sin parecerse a ninguno.",
+     "tono": "ambar"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Construcción"
+    },
+    {
+     "t": "h2",
+     "x": "Retícula de 5 unidades"
+    },
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "comp",
+        "n": "construccion"
+       }
+      ],
+      [
+       {
+        "t": "p",
+        "x": "El cuadrado mide 100 u con radio 24. El trazo, de 10 u con extremos redondos, recorre la línea de origen (y = 29), gira en un arco de radio 16 y vuelve como línea de destino (y = 61), donde la flecha marca el sentido."
+       },
+       {
+        "t": "p",
+        "x": "Todo el dibujo cabe entre x = 21 y x = 83 y entre y = 24 y y = 76: el centro óptico coincide con el del cuadrado. Se lee a 16 px."
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Logotipo"
+    },
+    {
+     "t": "h2",
+     "x": "Horizontal y vertical"
+    },
+    {
+     "t": "comp",
+     "n": "lockups"
+    },
+    {
+     "t": "h3",
+     "x": "Variantes del símbolo"
+    },
+    {
+     "t": "comp",
+     "n": "variantes"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Protección"
+       },
+       {
+        "t": "h2",
+        "x": "Aire alrededor"
+       },
+       {
+        "t": "comp",
+        "n": "proteccion"
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Tamaños mínimos"
+       },
+       {
+        "t": "h2",
+        "x": "Hasta dónde se reduce"
+       },
+       {
+        "t": "comp",
+        "n": "minimos"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Usos incorrectos"
+    },
+    {
+     "t": "h2",
+     "x": "Así no"
+    },
+    {
+     "t": "comp",
+     "n": "incorrectos"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Favicon"
+       },
+       {
+        "t": "h2",
+        "x": "El símbolo solo"
+       },
+       {
+        "t": "comp",
+        "n": "favicon"
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Fondos"
+       },
+       {
+        "t": "h2",
+        "x": "Sobre qué va"
+       },
+       {
+        "t": "comp",
+        "n": "fondos"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

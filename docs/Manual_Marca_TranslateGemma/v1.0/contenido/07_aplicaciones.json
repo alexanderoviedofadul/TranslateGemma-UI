@@ -1,0 +1,78 @@
+{
+ "id": "aplicaciones",
+ "num": "07",
+ "titulo": "Donde aparece la marca",
+ "corto": "Aplicaciones",
+ "kicker": "Aplicaciones",
+ "lead": "El puente vivo, la cabecera de una traducción y la imagen para compartir.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "isotipo-oscuro",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Puente vivo"
+       },
+       {
+        "t": "h2",
+        "x": "La metáfora en movimiento"
+       },
+       {
+        "t": "comp",
+        "n": "escaneo"
+       },
+       {
+        "t": "p",
+        "x": "Una línea se escribe en la orilla de origen y otra aparece, a la vez, en la de destino. Con movimiento reducido queda quieta."
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Cabecera"
+       },
+       {
+        "t": "h2",
+        "x": "Una traducción guardada"
+       },
+       {
+        "t": "comp",
+        "n": "cabecera-informe"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Compartir"
+    },
+    {
+     "t": "h2",
+     "x": "Imagen para redes"
+    },
+    {
+     "t": "comp",
+     "n": "og"
+    }
+   ]
+  }
+ ]
+}

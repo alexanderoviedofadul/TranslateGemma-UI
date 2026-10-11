@@ -1,0 +1,94 @@
+{
+ "id": "tipografia",
+ "num": "05",
+ "titulo": "Una letra para leer en cualquier alfabeto",
+ "corto": "Tipografía",
+ "kicker": "Tipografía",
+ "lead": "Inter para la interfaz y el logotipo; JetBrains Mono para códigos de idioma y datos.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "tipo-mini",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "comp",
+        "n": "especimen",
+        "familia": "Inter",
+        "rol": "Logotipo, titulares, texto e interfaz",
+        "muestra": "De una orilla a otra",
+        "pesos": "400 · 600 · 700 · 800 (variable)"
+       }
+      ],
+      [
+       {
+        "t": "comp",
+        "n": "especimen",
+        "familia": "JetBrains Mono",
+        "rol": "Códigos de idioma, rutas y datos",
+        "muestra": "es → en · /traducir",
+        "pesos": "400 · 700"
+       }
+      ]
+     ]
+    },
+    {
+     "t": "nota",
+     "titulo": "Autoalojadas",
+     "x": "Las dos van servidas desde el propio dominio en woff2 con licencia OFL {f:inter,jetbrains}: la portada no pide nada a Google Fonts. Los textos en otros alfabetos los dibuja la fuente del sistema del lector.",
+     "tono": "verde"
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1.3fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Escala"
+       },
+       {
+        "t": "h2",
+        "x": "Seis niveles"
+       },
+       {
+        "t": "comp",
+        "n": "escala"
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Tokens"
+       },
+       {
+        "t": "h2",
+        "x": "Para la web"
+       },
+       {
+        "t": "comp",
+        "n": "tokens"
+       }
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

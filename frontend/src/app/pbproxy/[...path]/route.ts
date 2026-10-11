@@ -9,6 +9,14 @@
  * (mismo origen → Caddy lo enruta a Next.js 3003) y este handler
  * reenvía a PocketBase preservando método, headers de auth, query y
  * body. Soporta GET/POST/PATCH/DELETE.
+ *
+ * 🔴 2026-10-11 — rutas en lista blanca. Antes reenviaba CUALQUIER ruta, así
+ * que el panel de superusuario de PocketBase quedaba en Internet en
+ * `/pbproxy/_/` (página de login: superficie de fuerza bruta). Ahora solo pasan
+ * las que usa el SDK del navegador: las colecciones `users` y `translations`
+ * (sin `impersonate`), `api/health` y `api/realtime`. El resto → 404. El
+ * servidor habla con PocketBase directamente (lib/server/pb-admin.ts), no por
+ * aquí.
  */
 import { NextResponse } from 'next/server';
 
@@ -21,9 +29,15 @@ const PB_URL = (
   'http://127.0.0.1:8094'
 ).replace(/\/$/, '');
 
+const RUTA_PERMITIDA =
+  /^api\/(health|realtime|collections\/(users|translations)(\/(?!impersonate\b)[A-Za-z0-9_.\-\/]*)?)$/;
+
 async function forward(req: Request, parts: string[]): Promise<Response> {
   const url = new URL(req.url);
   const sub = parts.join('/');
+  if (!RUTA_PERMITIDA.test(sub) || sub.includes('..')) {
+    return NextResponse.json({ message: 'Not found', status: 404 }, { status: 404 });
+  }
   const target = `${PB_URL}/${sub}${url.search}`;
 
   const headers: Record<string, string> = {};

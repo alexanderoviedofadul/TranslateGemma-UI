@@ -1,0 +1,32 @@
+{
+ "_nota": "Lo que el manual dice del producto, comprobado contra el código por audit_v1.py: idiomas = languages.ts, modelo por defecto = services/ollama.ts, límites = el proxy /ollama, rutas = app/.",
+ "etapas": [
+  {"icono": "doc", "titulo": "Escriba o pegue", "texto": "El texto de origen va en un panel; el resultado aparece en el de al lado.", "fuente": "panel"},
+  {"icono": "globo", "titulo": "Elija la pareja", "texto": "53 idiomas en el selector, con búsqueda por nombre o código, y un botón para intercambiar origen y destino.", "fuente": "lenguas,panel"},
+  {"icono": "flechas", "titulo": "Traduzca en directo", "texto": "El resultado se escribe a medida que el modelo lo genera. Ctrl/Cmd + Enter lanza la traducción.", "fuente": "servicio,panel"},
+  {"icono": "imagen", "titulo": "Traduzca una imagen", "texto": "El modelo instalado lee imágenes: el texto de una foto se traduce sin otro programa.", "fuente": "imagen,ollama-show"},
+  {"icono": "candado", "titulo": "En este servidor", "texto": "El texto llega a este servidor y lo traduce un modelo local; el proxy solo admite modelos locales, así que no sale hacia ningún proveedor de IA.", "fuente": "proxy"}
+ ],
+ "grupos": [
+  {"n": "10", "nombre": "Lenguas de mayor alcance", "ids": ["en", "es", "fr", "de", "pt", "it", "nl", "ru", "pl", "uk"], "color": "tg-jade", "texto": "Inglés, español, francés, alemán, portugués, italiano, neerlandés, ruso, polaco y ucraniano.", "fuente": "lenguas"},
+  {"n": "14", "nombre": "Asia", "ids": ["zh-Hans", "zh-Hant", "ja", "ko", "vi", "th", "id", "ms", "fil", "hi", "bn", "ta", "te", "ur"], "color": "tg-agua", "texto": "Chino simplificado y tradicional, japonés, coreano y diez lenguas del sur y el sudeste asiático.", "fuente": "lenguas"},
+  {"n": "4", "nombre": "Oriente Medio", "ids": ["ar", "he", "tr", "fa"], "color": "tg-ambar", "texto": "Árabe, hebreo, turco y persa: tres de ellas se escriben de derecha a izquierda.", "fuente": "lenguas"},
+  {"n": "8", "nombre": "Europa", "ids": ["el", "cs", "ro", "hu", "sv", "da", "fi", "no"], "color": "tg-jade-hondo", "texto": "Griego, checo, rumano, húngaro y las lenguas nórdicas.", "fuente": "lenguas"},
+  {"n": "2", "nombre": "África", "ids": ["sw", "am"], "color": "tg-ambar-hondo", "texto": "Suajili y amárico.", "fuente": "lenguas"},
+  {"n": "15", "nombre": "Otras lenguas de Europa", "ids": ["bg", "hr", "sr", "sk", "sl", "et", "lv", "lt", "ca", "gl", "eu", "cy", "ga", "is", "mt"], "color": "tg-pizarra", "texto": "Desde el búlgaro y las bálticas hasta el catalán, el gallego, el euskera, el galés, el irlandés, el islandés y el maltés.", "fuente": "lenguas"}
+ ],
+ "idiomas": ["en", "es", "fr", "de", "pt", "it", "nl", "ru", "pl", "uk", "zh-Hans", "zh-Hant", "ja", "ko", "vi", "th", "id", "ms", "fil", "hi", "bn", "ta", "te", "ur", "ar", "he", "tr", "fa", "el", "cs", "ro", "hu", "sv", "da", "fi", "no", "sw", "am", "bg", "hr", "sr", "sk", "sl", "et", "lv", "lt", "ca", "gl", "eu", "cy", "ga", "is", "mt"],
+ "limites": [
+  {"id": "LOCAL", "color": "tg-jade", "texto": "#FFFFFF", "x": "Solo modelos locales de traducción (translategemma y gemma3); un id de la nube recibe 403.", "fuente": "proxy"},
+  {"id": "8 MB", "color": "tg-ribera", "texto": "tg-humo", "x": "Tamaño máximo de una petición: el texto y, si la hay, una imagen.", "fuente": "proxy"},
+  {"id": "30/min", "color": "tg-ambar", "texto": "tg-noche", "x": "Traducciones por minuto desde una misma IP; la siguiente recibe 429 y un aviso.", "fuente": "proxy"}
+ ],
+ "vistas": [
+  {"id": "/", "nombre": "Portada", "icono": "globo", "texto": "Qué es, cómo funciona y qué no hace, con el recorrido por las cinco paradas.", "fuente": "git-landing"},
+  {"id": "/traducir", "nombre": "Traductor", "icono": "flechas", "texto": "Texto e imagen, sin cuenta; con sesión, el historial.", "fuente": "panel,historial"},
+  {"id": "/admin", "nombre": "Administración", "icono": "escudo", "texto": "Perfil y, para el rol admin, la lista de usuarios.", "fuente": "admin"},
+  {"id": "Cédula 360", "nombre": "Acceso aliado", "icono": "llave", "texto": "Entrar con la cuenta de Cédula 360 y su segundo factor.", "fuente": "alianza"}
+ ],
+ "modelo": "translategemma:latest",
+ "campos": ["model", "messages", "stream"]
+}

@@ -52,13 +52,13 @@ export default function LanguageSelector({ type }: LanguageSelectorProps) {
                     {/* Search */}
                     <div className="p-3 border-b border-gray-200 dark:border-gray-700">
                         <div className="relative">
-                            <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
+                            <MagnifyingGlassIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-tg-pizarra dark:text-tg-ceniza" />
                             <input
                                 type="text"
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                                 placeholder="Buscar idioma..."
-                                className="w-full pl-9 pr-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white"
+                                className="w-full pl-9 pr-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-tg-jade dark:text-white"
                                 autoFocus
                             />
                         </div>
@@ -67,17 +67,17 @@ export default function LanguageSelector({ type }: LanguageSelectorProps) {
                     {/* Language List */}
                     <div className="overflow-y-auto max-h-72">
                         {filteredLanguages.length === 0 ? (
-                            <div className="p-4 text-sm text-gray-500 text-center">No se encontraron idiomas</div>
+                            <div className="p-4 text-sm text-gray-500 text-center dark:text-tg-ceniza">No se encontraron idiomas</div>
                         ) : (
                             filteredLanguages.map((lang) => (
                                 <button
                                     key={lang.code}
                                     onClick={() => handleSelect(lang.name, lang.code)}
-                                    className={`w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-between ${currentLang.code === lang.code ? 'bg-blue-50 dark:bg-blue-900/30' : ''
+                                    className={`w-full text-left px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center justify-between ${currentLang.code === lang.code ? 'bg-tg-bruma dark:bg-tg-ribera' : ''
                                         }`}
                                 >
                                     <span className="text-gray-900 dark:text-white">{lang.name}</span>
-                                    <span className="text-xs text-gray-400">{lang.nativeName}</span>
+                                    <span className="text-xs text-tg-pizarra dark:text-tg-ceniza">{lang.nativeName}</span>
                                 </button>
                             ))
                         )}

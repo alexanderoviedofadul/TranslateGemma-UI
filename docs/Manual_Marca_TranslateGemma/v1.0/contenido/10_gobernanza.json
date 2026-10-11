@@ -1,0 +1,136 @@
+{
+ "id": "gobernanza",
+ "num": "10",
+ "titulo": "Versiones y fuentes",
+ "corto": "Fuentes",
+ "kicker": "Gobernanza",
+ "lead": "Cómo cambia este manual y de dónde sale cada afirmación.",
+ "paginas": [
+  {
+   "plantilla": "portadilla",
+   "tono": "noche",
+   "fig": "isotipo-oscuro",
+   "bloques": []
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "cols",
+     "r": "1fr 1fr",
+     "cols": [
+      [
+       {
+        "t": "eyebrow",
+        "x": "Versiones"
+       },
+       {
+        "t": "h2",
+        "x": "Inmutable"
+       },
+       {
+        "t": "p",
+        "x": "Esta carpeta es la v1.0 y no se edita: un cambio de fondo abre v1.1 o v2.0 en su propia carpeta. Las salidas se generan con build_v1.py y se comprueban con audit_v1.py, que debe terminar en 0 fallos."
+       },
+       {
+        "t": "p",
+        "x": "El kit viene del Manual de KANSA v6.0 {f:kit}."
+       }
+      ],
+      [
+       {
+        "t": "eyebrow",
+        "x": "Lo que corrige"
+       },
+       {
+        "t": "h2",
+        "x": "Respecto a lo anterior"
+       },
+       {
+        "t": "tabla",
+        "cab": [
+         "Antes",
+         "v1.0"
+        ],
+        "filas": [
+         [
+          "Azul de plantilla #3B82F6",
+          "Jade #0F766E"
+         ],
+         [
+          "Icono de globo de catálogo",
+          "Símbolo propio: la línea que vuelve"
+         ],
+         [
+          "Inter pedida a Google Fonts",
+          "Inter y JetBrains Mono autoalojadas"
+         ],
+         [
+          "«55 idiomas»",
+          "53 en el selector"
+         ],
+         [
+          "«100% local, sin internet»",
+          "Se traduce en este servidor"
+         ]
+        ],
+        "c": "compacta",
+        "corrige": true
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Bibliografía"
+    },
+    {
+     "t": "h2",
+     "x": "Fuentes (1)"
+    },
+    {
+     "t": "comp",
+     "n": "bibliografia",
+     "desde": 0,
+     "hasta": 13
+    }
+   ]
+  },
+  {
+   "plantilla": "libre",
+   "tono": "claro",
+   "bloques": [
+    {
+     "t": "eyebrow",
+     "x": "Bibliografía"
+    },
+    {
+     "t": "h2",
+     "x": "Fuentes (2)"
+    },
+    {
+     "t": "comp",
+     "n": "bibliografia",
+     "desde": 13
+    }
+   ]
+  },
+  {
+   "plantilla": "portada",
+   "tono": "noche",
+   "bloques": [
+    {
+     "t": "comp",
+     "n": "contraportada"
+    }
+   ]
+  }
+ ]
+}

@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import { MoonIcon, SunIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useAppStore } from '@/stores/appStore';
 import { UserMenu } from '@/components/AuthModal';
+import Logo from '@/components/marca/Logo';
 
 export default function MarketingHeader() {
     const { theme, setTheme } = useAppStore();
@@ -41,17 +42,7 @@ export default function MarketingHeader() {
         <header className="sticky top-0 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
                 <a href="/" className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
-                        <span className="text-white font-bold text-lg">T</span>
-                    </div>
-                    <div>
-                        <h1 className="font-bold text-gray-900 dark:text-white leading-tight">
-                            TranslateGemma
-                        </h1>
-                        <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                            Traducción privada con IA
-                        </p>
-                    </div>
+                    <Logo tam={38} lema="Traducción en este servidor" />
                 </a>
 
                 {/* Desktop nav */}
@@ -112,7 +103,7 @@ export default function MarketingHeader() {
                         Administración
                     </a>
                     <div className="flex items-center justify-between px-3 py-2">
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                        <span className="text-sm text-gray-500 dark:text-tg-ceniza">
                             Tema
                         </span>
                         <button

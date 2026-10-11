@@ -89,21 +89,21 @@ export default function ImageTranslation() {
 
     return (
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                 <PhotoIcon className="h-5 w-5" />
                 Traducción de Imágenes
-            </h3>
+            </h2>
 
             {!image ? (
                 <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-8 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+                    className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-xl p-8 text-center cursor-pointer hover:border-tg-jade hover:bg-tg-bruma dark:hover:bg-tg-ribera transition-colors"
                 >
-                    <PhotoIcon className="h-12 w-12 mx-auto text-gray-400 mb-4" />
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <PhotoIcon className="h-12 w-12 mx-auto text-tg-pizarra mb-4 dark:text-tg-ceniza" />
+                    <p className="text-gray-600 dark:text-tg-ceniza">
                         Haz clic o arrastra una imagen aquí
                     </p>
-                    <p className="text-xs text-gray-400 mt-2">JPEG, PNG, WebP (máx 10MB)</p>
+                    <p className="text-xs text-tg-pizarra mt-2 dark:text-tg-ceniza">JPEG, PNG, WebP (máx 10MB)</p>
                     <input
                         ref={fileInputRef}
                         type="file"
@@ -127,11 +127,11 @@ export default function ImageTranslation() {
                             <XMarkIcon className="h-4 w-4" />
                         </button>
                     </div>
-                    <p className="text-sm text-gray-500 truncate">{fileName}</p>
+                    <p className="text-sm text-gray-500 truncate dark:text-tg-ceniza">{fileName}</p>
                     <button
                         onClick={handleTranslateImage}
                         disabled={isProcessing}
-                        className="w-full py-3 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:from-purple-700 hover:to-pink-700 disabled:opacity-50 transition-all duration-200 flex items-center justify-center gap-2"
+                        className="w-full py-3 px-4 bg-tg-jade-hondo text-white font-semibold rounded-xl hover:bg-tg-jade-oscuro disabled:opacity-50 transition-all duration-200 flex items-center justify-center gap-2"
                     >
                         {isProcessing ? (
                             <>
