@@ -14,6 +14,7 @@ import MarketingHeader from '@/components/layout/MarketingHeader';
 import SiteFooter from '@/components/layout/SiteFooter';
 import Recorrido from '@/components/marca/Recorrido';
 import Paralaje from '@/components/marca/Paralaje';
+import SeguridadComprobada from '@/components/confianza/SeguridadComprobada';
 import { LANGUAGES } from '@/lib/languages';
 import { GRUPOS, LIMITES, MODELO, PREGUNTAS } from '@/lib/marca';
 
@@ -170,6 +171,17 @@ export default function Portada() {
                         </div>
                     </div>
                 </section>
+
+                {/* Seguridad comprobada (kit «confianza y recorrido», 25-oct-2026): sin mediciones publicables no se pinta */}
+                <SeguridadComprobada
+                    tratamiento="usted"
+                    clases={{
+                        seccion: 'tg-sc bg-tg-noche text-tg-humo border-t border-tg-linea',
+                        cont: 'max-w-7xl mx-auto px-4 py-20',
+                        eyebrow: 'font-mono text-xs uppercase tracking-[0.16em] text-tg-agua',
+                        h2: 'mt-2 text-3xl sm:text-4xl font-bold tracking-tight',
+                    }}
+                />
 
                 {/* Acceso */}
                 <section aria-labelledby="acceso-tit" className="bg-white dark:bg-tg-noche">

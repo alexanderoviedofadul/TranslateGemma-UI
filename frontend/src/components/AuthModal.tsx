@@ -474,6 +474,12 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }: AuthModalP
                                 {mode === 'login' ? '¿No tienes cuenta? Regístrate' : '¿Ya tienes cuenta? Inicia sesión'}
                             </button>
                         )}
+                        <p className="text-sm text-tg-pizarra dark:text-tg-ceniza">
+                            ¿Primera vez aquí?{' '}
+                            <a href="/conozca/" className="font-medium text-tg-jade-hondo dark:text-tg-agua underline underline-offset-2">
+                                Vea el recorrido del producto
+                            </a>
+                        </p>
                         <p className="text-[11px] text-tg-pizarra dark:text-tg-ceniza">
                             En alianza con{' '}
                             <a

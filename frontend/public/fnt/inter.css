@@ -1,0 +1,3 @@
+/* Inter (OFL) para las páginas estáticas fuera de Next (/conozca/): la misma fuente que declara src/app/globals.css,
+   copiada por el build del manual en public/marca/fuentes/. Kit «confianza y recorrido», 25-oct-2026. */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400 800; font-display: swap; src: url('/marca/fuentes/inter-var.woff2') format('woff2'); }

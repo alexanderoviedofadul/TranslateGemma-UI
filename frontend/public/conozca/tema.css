@@ -1,0 +1,7 @@
+/* tema.css — TranslateGemma: colores y fuentes del manual de marca para el recorrido. Lo escribe generar-conozca.mjs
+   (kit 1.0.4) desde el «tema» de conozca.json: no editar a mano. */
+.rc-pagina, html.rc-raiz {
+  --rc-fondo: #0A1014; --rc-panel: #18262E; --rc-acento: #2DD4BF; --rc-acento-rgb: 45, 212, 191;
+  --rc-sobre-acento: #0A1014; --rc-texto: #E2E8F0;
+  --rc-fuente: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}

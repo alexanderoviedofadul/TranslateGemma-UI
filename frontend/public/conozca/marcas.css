@@ -1,0 +1,7 @@
+/* marcas.css — TranslateGemma: dónde va cada marca sobre cada captura (x, y, ancho y alto en %). Lo escribe
+   generar-conozca.mjs (kit 1.0.4) desde conozca.json: no editar a mano. */
+#cap-escriba [data-rc-marco="0"] .rc-vista { aspect-ratio: 1600 / 900; }
+#cap-pareja [data-rc-marco="0"] .rc-vista { aspect-ratio: 1600 / 900; }
+#cap-directo [data-rc-marco="0"] .rc-vista { aspect-ratio: 1600 / 900; }
+#cap-imagen [data-rc-marco="0"] .rc-vista { aspect-ratio: 1600 / 900; }
+#cap-servidor [data-rc-marco="0"] .rc-vista { aspect-ratio: 1600 / 900; }

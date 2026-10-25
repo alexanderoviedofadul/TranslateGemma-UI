@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es" class="rc-raiz rc-sin-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conozca TranslateGemma · Recorrido</title>
+  <meta name="description" content="Recorrido por TranslateGemma: traducción de texto e imágenes entre 53 idiomas con un modelo abierto que corre con Ollama en este servidor.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A1014">
+  <meta name="generator" content="kit confianza y recorrido 1.0.4">
+  <link rel="stylesheet" href="/fnt/inter.css">
+  <link rel="stylesheet" href="/kit-confianza/rc-recorrido.css?v=1.0.4">
+  <link rel="stylesheet" href="/kit-confianza/sc-seguridad.css?v=1.0.4">
+  <link rel="stylesheet" href="/conozca/tema.css?v=1.0.4">
+  <link rel="stylesheet" href="/conozca/marcas.css?v=1.0.4">
+  <link rel="icon" href="/marca/logos/favicon-32.png">
+  <script src="/kit-confianza/gsap/3.15.0/gsap.min.js" defer></script>
+  <script src="/kit-confianza/gsap/3.15.0/ScrollTrigger.min.js" defer></script>
+  <script src="/kit-confianza/gsap/3.15.0/ScrollToPlugin.min.js" defer></script>
+  <script src="/kit-confianza/gsap/3.15.0/Observer.min.js" defer></script>
+  <script src="/kit-confianza/gsap/3.15.0/SplitText.min.js" defer></script>
+  <script src="/kit-confianza/rc-recorrido.js?v=1.0.4" defer></script>
+  <script src="/kit-confianza/sc-seguridad.js?v=1.0.4" defer></script>
+</head>
+<body class="rc-pagina">
+<a class="rc-saltar" href="#contenido">Saltar al contenido</a>
+<div class="rc" data-rc data-rc-clave="translategemma" data-total="7">
+  <header class="rc-cab">
+    <a class="rc-logo" href="/">
+      <img src="/marca/logos/tg-simbolo.svg" alt="TranslateGemma" width="28" height="28">
+      <span class="rc-logo-txt">TranslateGemma</span>
+    </a>
+    <span class="rc-actual" data-rc-actual aria-live="polite">Portada</span>
+    <div class="rc-acciones">
+      <div class="rc-modo" role="group" aria-label="Cómo recorrerlo">
+        <button type="button" class="rc-btn" data-rc-modo-btn="escenas" aria-pressed="true" title="Escenas: se recorre desplazando la página"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 3h8a3 3 0 013 3v12a3 3 0 01-3 3H8a3 3 0 01-3-3V6a3 3 0 013-3z"/><path d="M12 7v4"/></svg><span class="rc-rotulo">Escenas</span></button>
+        <button type="button" class="rc-btn" data-rc-modo-btn="diapositivas" aria-pressed="false" title="Diapositivas: un paso por pantalla, para proyectar (D)"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18v11H3z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg><span class="rc-rotulo">Diapositivas</span></button>
+        <button type="button" class="rc-btn" data-rc-modo-btn="mapa" aria-pressed="false" title="Mapa: todos los capítulos de un vistazo (M)"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg><span class="rc-rotulo">Mapa</span></button>
+      </div>
+      <button type="button" class="rc-btn" data-rc-indice-abrir aria-haspopup="dialog" title="Todos los capítulos (I)"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h7v7H4z"/><path d="M13 4h7v7h-7z"/><path d="M4 13h7v7H4z"/><path d="M13 13h7v7h-7z"/></svg><span class="rc-rotulo">Índice</span></button>
+      <button type="button" class="rc-btn rc-solo-md" data-rc-pantalla aria-pressed="false" title="Pantalla completa (F)"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5"/><path d="M20 9V4h-5"/><path d="M4 15v5h5"/><path d="M20 15v5h-5"/></svg><span class="rc-sr">Pantalla completa</span></button>
+      <a class="rc-btn-acento rc-solo-md" href="/traducir"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/><path d="M14 4h5a1 1 0 011 1v14a1 1 0 01-1 1h-5"/></svg><span class="rc-rotulo">Usar el traductor</span></a>
+    </div>
+    <div class="rc-progreso" aria-hidden="true"><span data-rc-progreso></span></div>
+  </header>
+  <nav class="rc-riel" aria-label="Capítulos" data-rc-riel>
+    <ol>
+      <li><a href="#inicio" data-rc-ir="inicio" aria-label="Portada"><span class="rc-punto"></span></a></li>
+      <li><a href="#cap-escriba" data-rc-ir="cap-escriba" aria-label="01 · Escriba o pegue"><span class="rc-punto"></span><span class="rc-riel-num">01</span><span class="rc-riel-titulo">Escriba o pegue</span></a></li>
+      <li><a href="#cap-pareja" data-rc-ir="cap-pareja" aria-label="02 · Elija la pareja de idiomas"><span class="rc-punto"></span><span class="rc-riel-num">02</span><span class="rc-riel-titulo">Elija la pareja de idiomas</span></a></li>
+      <li><a href="#cap-directo" data-rc-ir="cap-directo" aria-label="03 · La traducción, en directo"><span class="rc-punto"></span><span class="rc-riel-num">03</span><span class="rc-riel-titulo">La traducción, en directo</span></a></li>
+      <li><a href="#cap-imagen" data-rc-ir="cap-imagen" aria-label="04 · Traduzca una imagen"><span class="rc-punto"></span><span class="rc-riel-num">04</span><span class="rc-riel-titulo">Traduzca una imagen</span></a></li>
+      <li><a href="#cap-servidor" data-rc-ir="cap-servidor" aria-label="05 · Se traduce en este servidor"><span class="rc-punto"></span><span class="rc-riel-num">05</span><span class="rc-riel-titulo">Se traduce en este servidor</span></a></li>
+      <li><a href="#cap-cuenta" data-rc-ir="cap-cuenta" aria-label="06 · Traduzca sin cuenta; guarde con ella"><span class="rc-punto"></span><span class="rc-riel-num">06</span><span class="rc-riel-titulo">Traduzca sin cuenta; guarde con ella</span></a></li>
+      <li><a href="#cap-promete" data-rc-ir="cap-promete" aria-label="07 · Lo que no promete"><span class="rc-punto"></span><span class="rc-riel-num">07</span><span class="rc-riel-titulo">Lo que no promete</span></a></li>
+      <li><a href="#seguridad-comprobada" data-rc-ir="seguridad-comprobada" aria-label="Seguridad comprobada"><span class="rc-punto rc-punto-extra"></span><span class="rc-riel-titulo">Seguridad comprobada</span></a></li>
+    </ol>
+  </nav>
+  <main id="contenido" class="rc-escenas" data-rc-escenas>
+    <section class="rc-portada rc-momento" id="inicio" data-rc-escena="inicio" data-momento="portada" aria-labelledby="rc-titulo">
+      <div class="rc-capas" aria-hidden="true">
+        <div class="rc-halo" data-rc-prof="0.15"></div>
+        <div class="rc-pilar rc-pilar-a" data-rc-prof="0.35"></div>
+        <div class="rc-pilar rc-pilar-b" data-rc-prof="0.5"></div>
+        <img class="rc-flotante rc-flotante-1" src="/marca/paradas/tg-parada-2.svg" alt="" width="1600" height="900" decoding="async" data-rc-prof="0.55">
+        <img class="rc-flotante rc-flotante-2" src="/marca/paradas/tg-parada-3.svg" alt="" width="1600" height="900" decoding="async" data-rc-prof="0.65">
+        <img class="rc-flotante rc-flotante-3" src="/marca/paradas/tg-parada-4.svg" alt="" width="1600" height="900" decoding="async" data-rc-prof="0.75">
+      </div>
+      <div class="rc-portada-texto">
+        <p class="rc-antetitulo">TranslateGemma · Traducción con un modelo abierto</p>
+        <h1 class="rc-titulo" id="rc-titulo" data-rc-partir>De una orilla a otra</h1>
+        <p class="rc-sub">Siete capítulos, de lo general a lo específico: cómo se escribe, cómo se elige la pareja de idiomas, cómo llega la traducción, cómo se traduce una imagen, dónde se traduce, qué guarda una cuenta y qué no promete. Con las escenas del manual de marca, sin datos de nadie.</p>
+        <div class="rc-cta">
+          <a class="rc-btn-acento rc-btn-lg" href="#cap-escriba" data-rc-ir="cap-escriba"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg> Comenzar</a>
+          <button type="button" class="rc-btn-claro rc-btn-lg" data-rc-indice-abrir aria-haspopup="dialog"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h7v7H4z"/><path d="M13 4h7v7h-7z"/><path d="M4 13h7v7H4z"/><path d="M13 13h7v7h-7z"/></svg> Índice</button>
+          <button type="button" class="rc-btn-claro rc-btn-lg" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver el mapa</button>
+          <a class="rc-btn-claro rc-btn-lg" href="#inicio" data-rc-continuar hidden><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 103-6.7"/><path d="M3 4v5h5"/><path d="M12 7v5l3 2"/></svg> Continuar donde iba</a>
+        </div>
+        <p class="rc-teclas">Desplácese, o use ← → · I abre el índice · D cambia a diapositivas · M abre el mapa · F pantalla completa</p>
+      </div>
+      <span class="rc-desplace" aria-hidden="true"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></span>
+    </section>
+    <section class="rc-cap" id="cap-escriba" data-capitulo="escriba" data-rc-escena="cap-escriba" data-numero="1" data-titulo="Escriba o pegue" aria-labelledby="cap-escriba-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="01"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 1 · Cualquiera</p>
+          <h2 class="rc-cap-titulo" id="cap-escriba-t">Escriba o pegue</h2>
+          <p class="rc-grande" data-rc-iluminar>Para entender un texto en otro idioma, o escribir en uno que no domina, hace falta una traducción rápida sin instalar nada.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">El texto de origen va en un panel y el resultado aparece en el de al lado. El traductor funciona sin cuenta: la cuenta solo sirve para guardar el historial.</p>
+            <ol class="rc-pasos">
+              <li><button type="button" class="rc-paso" data-rc-paso="0-0" aria-pressed="false"><span class="rc-paso-num">1</span><span class="rc-paso-texto"><strong>El texto de origen, a un lado.</strong> Escrito o pegado.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-1" aria-pressed="false"><span class="rc-paso-num">2</span><span class="rc-paso-texto"><strong>El resultado, al otro.</strong> Sin iniciar sesión.</span></button></li>
+            </ol>
+          </div>
+          <div class="rc-escenario">
+            <div class="rc-mazo" data-rc-mazo>
+            <figure class="rc-marco rc-marco-frente" data-rc-marco="0">
+              <div class="rc-marco-barra" aria-hidden="true"><span class="rc-puntos"><i></i><i></i><i></i></span><span class="rc-url">translate.cedula360.tech/traducir</span></div>
+              <div class="rc-vista" data-rc-vista>
+                <div class="rc-lienzo" data-rc-lienzo>
+                  <img src="/marca/paradas/tg-parada-1.svg" alt="Ilustración del manual de marca: un panel de texto con el cursor al final de la última línea" width="1600" height="900" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <figcaption class="rc-pie">Escriba o pegue</figcaption>
+            </figure>
+            </div>
+            <p class="rc-bocadillo" data-rc-bocadillo aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Traduce en el navegador, sin instalar nada y sin crear una cuenta.</p>
+          <div class="rc-acciones-cap">
+            <a class="rc-btn-acento" href="/traducir"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg> Usar el traductor</a>
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-pareja" data-capitulo="pareja" data-rc-escena="cap-pareja" data-numero="2" data-titulo="Elija la pareja de idiomas" aria-labelledby="cap-pareja-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="02"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 2 · Cualquiera</p>
+          <h2 class="rc-cap-titulo" id="cap-pareja-t">Elija la pareja de idiomas</h2>
+          <p class="rc-grande" data-rc-iluminar>Entre decenas de idiomas, encontrar el que necesita no debería ser una búsqueda larga.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">El selector tiene 53 idiomas, cada uno con su nombre propio, y se busca por nombre o por código. Un botón intercambia origen y destino.</p>
+            <ol class="rc-pasos">
+              <li><button type="button" class="rc-paso" data-rc-paso="0-0" aria-pressed="false"><span class="rc-paso-num">1</span><span class="rc-paso-texto"><strong>Busque por nombre o por código.</strong> Cada idioma con su nombre propio.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-1" aria-pressed="false"><span class="rc-paso-num">2</span><span class="rc-paso-texto"><strong>Intercambie.</strong> Origen y destino cambian de lado con un botón.</span></button></li>
+            </ol>
+          </div>
+          <div class="rc-escenario">
+            <div class="rc-mazo" data-rc-mazo>
+            <figure class="rc-marco rc-marco-frente" data-rc-marco="0">
+              <div class="rc-marco-barra" aria-hidden="true"><span class="rc-puntos"><i></i><i></i><i></i></span><span class="rc-url">translate.cedula360.tech/traducir</span></div>
+              <div class="rc-vista" data-rc-vista>
+                <div class="rc-lienzo" data-rc-lienzo>
+                  <img src="/marca/paradas/tg-parada-2.svg" alt="Ilustración del manual de marca: dos círculos de idioma unidos por flechas de ida y vuelta sobre una lista" width="1600" height="900" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <figcaption class="rc-pie">Elija la pareja</figcaption>
+            </figure>
+            </div>
+            <p class="rc-bocadillo" data-rc-bocadillo aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Llega al idioma que necesita en un par de pulsaciones.</p>
+          <p class="rc-cifra"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M8 12l3 3 5-6"/></svg><span>53 idiomas en el selector (la documentación del modelo declara 55).</span></p>
+          <div class="rc-acciones-cap">
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-directo" data-capitulo="directo" data-rc-escena="cap-directo" data-numero="3" data-titulo="La traducción, en directo" aria-labelledby="cap-directo-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="03"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 3 · Cualquiera</p>
+          <h2 class="rc-cap-titulo" id="cap-directo-t">La traducción, en directo</h2>
+          <p class="rc-grande" data-rc-iluminar>Esperar en blanco a que termine una traducción larga hace dudar de si algo está pasando.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">La traducción se escribe a medida que el modelo la genera. Con Ctrl o Cmd + Enter se lanza sin soltar el teclado.</p>
+            <ol class="rc-pasos">
+              <li><button type="button" class="rc-paso" data-rc-paso="0-0" aria-pressed="false"><span class="rc-paso-num">1</span><span class="rc-paso-texto"><strong>Se escribe mientras se genera.</strong> Ve el avance desde la primera palabra.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-1" aria-pressed="false"><span class="rc-paso-num">2</span><span class="rc-paso-texto"><strong>Ctrl o Cmd + Enter.</strong> Para traducir sin soltar el teclado.</span></button></li>
+            </ol>
+          </div>
+          <div class="rc-escenario">
+            <div class="rc-mazo" data-rc-mazo>
+            <figure class="rc-marco rc-marco-frente" data-rc-marco="0">
+              <div class="rc-marco-barra" aria-hidden="true"><span class="rc-puntos"><i></i><i></i><i></i></span><span class="rc-url">translate.cedula360.tech/traducir</span></div>
+              <div class="rc-vista" data-rc-vista>
+                <div class="rc-lienzo" data-rc-lienzo>
+                  <img src="/marca/paradas/tg-parada-3.svg" alt="Ilustración del manual de marca: dos paneles de texto, el de destino escribiéndose" width="1600" height="900" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <figcaption class="rc-pie">Traduzca en directo</figcaption>
+            </figure>
+            </div>
+            <p class="rc-bocadillo" data-rc-bocadillo aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Lee el resultado desde el primer momento, sin esperar en blanco.</p>
+          <div class="rc-acciones-cap">
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-imagen" data-capitulo="imagen" data-rc-escena="cap-imagen" data-numero="4" data-titulo="Traduzca una imagen" aria-labelledby="cap-imagen-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="04"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 4 · Cualquiera</p>
+          <h2 class="rc-cap-titulo" id="cap-imagen-t">Traduzca una imagen</h2>
+          <p class="rc-grande" data-rc-iluminar>El texto de una foto o de una captura no se puede copiar y pegar.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">El modelo instalado lee imágenes: el texto de una foto o de una captura se traduce sin pasar por otro programa.</p>
+            <ol class="rc-pasos">
+              <li><button type="button" class="rc-paso" data-rc-paso="0-0" aria-pressed="false"><span class="rc-paso-num">1</span><span class="rc-paso-texto"><strong>Suba la foto o la captura.</strong> El modelo lee el texto que contiene.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-1" aria-pressed="false"><span class="rc-paso-num">2</span><span class="rc-paso-texto"><strong>Lea la traducción.</strong> Sin pasar por otro programa.</span></button></li>
+            </ol>
+          </div>
+          <div class="rc-escenario">
+            <div class="rc-mazo" data-rc-mazo>
+            <figure class="rc-marco rc-marco-frente" data-rc-marco="0">
+              <div class="rc-marco-barra" aria-hidden="true"><span class="rc-puntos"><i></i><i></i><i></i></span><span class="rc-url">translate.cedula360.tech/traducir</span></div>
+              <div class="rc-vista" data-rc-vista>
+                <div class="rc-lienzo" data-rc-lienzo>
+                  <img src="/marca/paradas/tg-parada-4.svg" alt="Ilustración del manual de marca: una imagen de montañas cuyo texto pasa a un panel traducido" width="1600" height="900" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <figcaption class="rc-pie">Traduzca una imagen</figcaption>
+            </figure>
+            </div>
+            <p class="rc-bocadillo" data-rc-bocadillo aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Un letrero, un documento fotografiado o una captura se entienden en su idioma.</p>
+          <div class="rc-acciones-cap">
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-servidor" data-capitulo="servidor" data-rc-escena="cap-servidor" data-numero="5" data-titulo="Se traduce en este servidor" aria-labelledby="cap-servidor-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="05"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 5 · Cualquiera</p>
+          <h2 class="rc-cap-titulo" id="cap-servidor-t">Se traduce en este servidor</h2>
+          <p class="rc-grande" data-rc-iluminar>Un texto privado no debería terminar en manos de un proveedor de IA para traducirlo.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">El texto viaja cifrado hasta este servidor y lo traduce translategemma, un modelo abierto de Google DeepMind que corre con Ollama aquí mismo. El servicio solo admite modelos locales de traducción: un modelo de la nube recibe un rechazo. Cada traducción admite hasta 8 MB y cada conexión, 30 traducciones por minuto.</p>
+            <ol class="rc-pasos">
+              <li><button type="button" class="rc-paso" data-rc-paso="0-0" aria-pressed="false"><span class="rc-paso-num">1</span><span class="rc-paso-texto"><strong>Solo modelos locales.</strong> Un modelo de la nube recibe un rechazo.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-1" aria-pressed="false"><span class="rc-paso-num">2</span><span class="rc-paso-texto"><strong>Hasta 8 MB por traducción.</strong> El texto y, si la hay, una imagen.</span></button></li>
+              <li><button type="button" class="rc-paso" data-rc-paso="0-2" aria-pressed="false"><span class="rc-paso-num">3</span><span class="rc-paso-texto"><strong>30 por minuto y conexión.</strong> La siguiente espera un minuto.</span></button></li>
+            </ol>
+          </div>
+          <div class="rc-escenario">
+            <div class="rc-mazo" data-rc-mazo>
+            <figure class="rc-marco rc-marco-frente" data-rc-marco="0">
+              <div class="rc-marco-barra" aria-hidden="true"><span class="rc-puntos"><i></i><i></i><i></i></span><span class="rc-url">translate.cedula360.tech</span></div>
+              <div class="rc-vista" data-rc-vista>
+                <div class="rc-lienzo" data-rc-lienzo>
+                  <img src="/marca/paradas/tg-parada-5.svg" alt="Ilustración del manual de marca: dos paneles dentro de un recinto y una nube con la conexión cortada" width="1600" height="900" loading="lazy" decoding="async">
+                </div>
+              </div>
+              <figcaption class="rc-pie">En este servidor</figcaption>
+            </figure>
+            </div>
+            <p class="rc-bocadillo" data-rc-bocadillo aria-live="polite" hidden></p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Su texto no se envía a ningún proveedor de IA.</p>
+          <p class="rc-cifra"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M8 12l3 3 5-6"/></svg><span>1 modelo, local: translategemma:latest.</span></p>
+          <div class="rc-acciones-cap">
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-cuenta" data-capitulo="cuenta" data-rc-escena="cap-cuenta" data-numero="6" data-titulo="Traduzca sin cuenta; guarde con ella" aria-labelledby="cap-cuenta-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="06"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 6 · Quien vuelve</p>
+          <h2 class="rc-cap-titulo" id="cap-cuenta-t">Traduzca sin cuenta; guarde con ella</h2>
+          <p class="rc-grande" data-rc-iluminar>Quien traduce a menudo quiere volver a lo que ya tradujo.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como rc-como--solo-texto" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">Con una cuenta propia, o con la de Cédula 360 y su segundo factor, cada traducción queda en su historial, guardado en este servidor. Sin sesión no se guarda nada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Recupera lo que tradujo; y si no inicia sesión, nada queda guardado.</p>
+          <div class="rc-acciones-cap">
+            <a class="rc-btn-acento" href="/admin"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg> Mi cuenta</a>
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cap" id="cap-promete" data-capitulo="promete" data-rc-escena="cap-promete" data-numero="7" data-titulo="Lo que no promete" aria-labelledby="cap-promete-t" tabindex="-1">
+      <div class="rc-momento rc-necesidad" data-momento="necesidad">
+        <span class="rc-numero" aria-hidden="true" data-rc-prof="0.45" data-num="07"></span>
+        <div class="rc-necesidad-texto">
+          <p class="rc-etiqueta">Capítulo 7 · Todos</p>
+          <h2 class="rc-cap-titulo" id="cap-promete-t">Lo que no promete</h2>
+          <p class="rc-grande" data-rc-iluminar>Saber qué no hace una herramienta evita usarla para lo que no sirve.</p>
+        </div>
+      </div>
+      <div class="rc-momento rc-como rc-como--solo-texto" data-momento="como">
+        <div class="rc-como-fijo">
+          <div class="rc-como-texto">
+            <h3 class="rc-subtitulo">Cómo se resuelve</h3>
+            <p class="rc-como-p">No es un traductor oficial: el resultado es un borrador que conviene revisar, y un documento oficial necesita un traductor oficial. No funciona sin conexión. Hay un solo modelo instalado. Y no es un producto de Google: usa el modelo abierto TranslateGemma bajo los términos de uso de Gemma.</p>
+          </div>
+        </div>
+      </div>
+      <div class="rc-momento rc-gana" data-momento="gana">
+        <div class="rc-gana-texto">
+          <h3 class="rc-subtitulo">Lo que se gana</h3>
+          <p class="rc-beneficio">Sabe cuándo basta una traducción automática y cuándo no.</p>
+          <div class="rc-acciones-cap">
+            <button type="button" class="rc-btn-claro" data-rc-modo-btn="mapa"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v5"/><path d="M12 9H6v4"/><path d="M12 9h6v4"/><path d="M4 13h4v5H4z"/><path d="M16 13h4v5h-4z"/><path d="M10 2h4v3h-4z"/></svg> Ver en el mapa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rc-extra sc" id="seguridad-comprobada" data-rc-escena="seguridad-comprobada" data-titulo="Seguridad comprobada" data-sc data-sc-quitar aria-labelledby="sc-t" tabindex="-1">
+      <div class="rc-momento" data-momento="extra">
+        <div class="sc-ancho">
+          <p class="rc-antetitulo">Seguridad comprobada</p>
+          <h2 class="rc-cap-titulo" id="sc-t">No le pedimos que nos crea: compruébelo usted</h2>
+          <p class="sc-lead">Herramientas públicas e independientes revisan este sitio: el cifrado de la conexión, las protecciones del navegador, la reputación ante los motores antimalware, el código y la accesibilidad. Aquí está lo que dicen, con la fecha de la medición, una captura real del informe y el enlace para que lo verifique en la fuente.</p>
+          <div class="sc-resumen" data-sc-resumen hidden></div>
+          <div data-sc-lista></div>
+          <p class="sc-nota-pie">Publicamos aquí las verificaciones en las que hoy tenemos la calificación más alta. Cada semana se vuelven a medir de forma automática; si un resultado deja de cumplir, sale de esta página hasta que lo corregimos. En las capturas se omite la dirección del servidor. Para reportar una vulnerabilidad: <a href="/.well-known/security.txt">security.txt</a>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="rc-cierre rc-momento" id="fin" data-rc-escena="fin" data-momento="cierre" aria-labelledby="rc-fin-t">
+      <div class="rc-cierre-texto">
+        <h2 class="rc-cap-titulo" id="rc-fin-t">De una orilla a otra</h2>
+        <p class="rc-grande">Escriba en un idioma y léalo en otro, con un modelo abierto que corre en este servidor.</p>
+        <div class="rc-cta">
+          <a class="rc-btn-claro rc-btn-lg" href="#inicio" data-rc-ir="inicio"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 0114-5.3"/><path d="M18 3v4h-4"/><path d="M20 12a8 8 0 01-14 5.3"/><path d="M6 21v-4h4"/></svg> Volver a empezar</a>
+          <a class="rc-btn-acento rc-btn-lg" href="/traducir">Usar el traductor</a>
+          <a class="rc-btn-claro rc-btn-lg" href="/">Volver a la portada</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="rc-mapa" data-rc-mapa hidden aria-labelledby="rc-mapa-t" tabindex="-1">
+    <div class="rc-mapa-cab">
+      <p class="rc-antetitulo">Mapa</p>
+      <h2 class="rc-cap-titulo" id="rc-mapa-t">TranslateGemma, de un vistazo</h2>
+      <p class="rc-sub">7 capítulos: lo que resuelve cada uno y cómo. Elija uno para verlo en el recorrido.</p>
+    </div>
+    <ol class="rc-mapa-lista">
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">01</span><h3>Escriba o pegue</h3><p>Dos paneles, origen y destino, sin cuenta.</p><ul class="rc-mapa-pasos"><li>El texto de origen, a un lado.</li><li>El resultado, al otro.</li></ul><a class="rc-btn" href="#cap-escriba" data-rc-ir="cap-escriba">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">02</span><h3>Elija la pareja de idiomas</h3><p>53 idiomas, búsqueda por nombre o código e intercambio.</p><ul class="rc-mapa-pasos"><li>Busque por nombre o por código.</li><li>Intercambie.</li></ul><a class="rc-btn" href="#cap-pareja" data-rc-ir="cap-pareja">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">03</span><h3>La traducción, en directo</h3><p>Resultado a medida que se genera; Ctrl o Cmd + Enter.</p><ul class="rc-mapa-pasos"><li>Se escribe mientras se genera.</li><li>Ctrl o Cmd + Enter.</li></ul><a class="rc-btn" href="#cap-directo" data-rc-ir="cap-directo">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">04</span><h3>Traduzca una imagen</h3><p>El texto de una foto, traducido sin otro programa.</p><ul class="rc-mapa-pasos"><li>Suba la foto o la captura.</li><li>Lea la traducción.</li></ul><a class="rc-btn" href="#cap-imagen" data-rc-ir="cap-imagen">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">05</span><h3>Se traduce en este servidor</h3><p>Un modelo local, sin proveedores de IA de por medio.</p><ul class="rc-mapa-pasos"><li>Solo modelos locales.</li><li>Hasta 8 MB por traducción.</li><li>30 por minuto y conexión.</li></ul><a class="rc-btn" href="#cap-servidor" data-rc-ir="cap-servidor">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">06</span><h3>Traduzca sin cuenta; guarde con ella</h3><p>Historial en este servidor, solo con sesión iniciada.</p><a class="rc-btn" href="#cap-cuenta" data-rc-ir="cap-cuenta">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+      <li class="rc-mapa-tarjeta"><span class="rc-mapa-num">07</span><h3>Lo que no promete</h3><p>Un borrador, en línea, con un modelo; no es de Google.</p><a class="rc-btn" href="#cap-promete" data-rc-ir="cap-promete">Verlo en el recorrido <svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></a></li>
+    </ol>
+  </section>
+  <nav class="rc-barra" aria-label="Pasar de escena">
+    <button type="button" class="rc-btn" data-rc-anterior aria-label="Anterior"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <button type="button" class="rc-btn rc-barra-pos" data-rc-indice-abrir data-rc-posicion aria-haspopup="dialog">Portada</button>
+    <button type="button" class="rc-btn" data-rc-siguiente aria-label="Siguiente"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+  </nav>
+  <dialog class="rc-indice" id="rc-indice" aria-labelledby="rc-indice-t">
+    <div class="rc-indice-cab"><h2 id="rc-indice-t">Capítulos</h2><button type="button" class="rc-btn" data-rc-cerrar>Cerrar</button></div>
+    <div class="rc-indice-cuerpo">
+      <ol class="rc-indice-lista">
+        <li><a class="rc-tarjeta" href="#cap-escriba" data-rc-ir="cap-escriba" data-rc-indice-item><span class="rc-tarjeta-img"><img src="/marca/paradas/tg-parada-1.svg" alt="" loading="lazy" decoding="async"></span><span class="rc-tarjeta-num">01</span><span class="rc-tarjeta-titulo">Escriba o pegue</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-pareja" data-rc-ir="cap-pareja" data-rc-indice-item><span class="rc-tarjeta-img"><img src="/marca/paradas/tg-parada-2.svg" alt="" loading="lazy" decoding="async"></span><span class="rc-tarjeta-num">02</span><span class="rc-tarjeta-titulo">Elija la pareja de idiomas</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-directo" data-rc-ir="cap-directo" data-rc-indice-item><span class="rc-tarjeta-img"><img src="/marca/paradas/tg-parada-3.svg" alt="" loading="lazy" decoding="async"></span><span class="rc-tarjeta-num">03</span><span class="rc-tarjeta-titulo">La traducción, en directo</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-imagen" data-rc-ir="cap-imagen" data-rc-indice-item><span class="rc-tarjeta-img"><img src="/marca/paradas/tg-parada-4.svg" alt="" loading="lazy" decoding="async"></span><span class="rc-tarjeta-num">04</span><span class="rc-tarjeta-titulo">Traduzca una imagen</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-servidor" data-rc-ir="cap-servidor" data-rc-indice-item><span class="rc-tarjeta-img"><img src="/marca/paradas/tg-parada-5.svg" alt="" loading="lazy" decoding="async"></span><span class="rc-tarjeta-num">05</span><span class="rc-tarjeta-titulo">Se traduce en este servidor</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-cuenta" data-rc-ir="cap-cuenta" data-rc-indice-item><span class="rc-tarjeta-img"></span><span class="rc-tarjeta-num">06</span><span class="rc-tarjeta-titulo">Traduzca sin cuenta; guarde con ella</span></a></li>
+        <li><a class="rc-tarjeta" href="#cap-promete" data-rc-ir="cap-promete" data-rc-indice-item><span class="rc-tarjeta-img"></span><span class="rc-tarjeta-num">07</span><span class="rc-tarjeta-titulo">Lo que no promete</span></a></li>
+        <li><a class="rc-tarjeta" href="#seguridad-comprobada" data-rc-ir="seguridad-comprobada" data-rc-indice-item><span class="rc-tarjeta-img rc-tarjeta-ico"><svg class="rc-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><span class="rc-tarjeta-titulo">Seguridad comprobada</span></a></li>
+      </ol>
+    </div>
+  </dialog>
+</div>
+</body>
+</html>

@@ -74,3 +74,11 @@ body {
 @media (prefers-color-scheme: dark) {
   :focus-visible { outline-color: var(--tg-espuma); }
 }
+
+/* «Seguridad comprobada» (kit «confianza y recorrido», 25-oct-2026): la forma la pone la hoja del kit
+   (public/kit-confianza/sc-seguridad.css); aquí, la paleta del manual sobre Noche (Ceniza 7,6:1, Agua 11:1).
+   La hoja del kit va fuera de capa y gana a las utilidades: el margen del título a la entradilla, aquí. */
+.tg-sc { --sc-texto: var(--tg-humo); --sc-tenue: var(--tg-ceniza); --sc-acento: var(--tg-agua); --sc-sobre-acento: var(--tg-noche); --sc-tarjeta: var(--tg-cauce); --sc-borde: var(--tg-linea); }
+.tg-sc .sc-lead { margin-top: 1rem; }
+.tg-sc .sc-fuente { color: #fff; }
+.tg-sc .sc-nota-pie a { text-decoration: underline; text-underline-offset: 3px; }

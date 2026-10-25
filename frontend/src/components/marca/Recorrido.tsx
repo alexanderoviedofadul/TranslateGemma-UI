@@ -34,6 +34,10 @@ export default function Recorrido() {
                 <h2 id="recorrido-tit" className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight">
                     Cinco paradas, del texto al texto
                 </h2>
+                <p className="mt-3 text-tg-ceniza">
+                    ¿Lo quiere ver con calma, capítulo a capítulo?{' '}
+                    <a href="/conozca/" className="font-semibold text-tg-agua underline underline-offset-4">Vea el recorrido completo</a>
+                </p>
             </div>
             <div className="max-w-7xl mx-auto px-4 pb-20 lg:grid lg:grid-cols-[1fr_1.15fr] lg:gap-12">
                 <ol className="list-none p-0 m-0">

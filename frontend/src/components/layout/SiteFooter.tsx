@@ -33,6 +33,11 @@ export default function SiteFooter() {
                             </a>
                         </li>
                         <li>
+                            <a href="/conozca/" className="hover:text-tg-jade-hondo dark:hover:text-tg-agua underline-offset-2 hover:underline">
+                                Recorrido del producto
+                            </a>
+                        </li>
+                        <li>
                             <a
                                 href="https://github.com/alexanderoviedofadul/TranslateGemma-UI"
                                 target="_blank"

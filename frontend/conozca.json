@@ -1,0 +1,175 @@
+{
+  "clave": "translategemma",
+  "producto": "TranslateGemma",
+  "sitio": "translate.cedula360.tech",
+  "idioma": "es",
+  "tratamiento": "usted",
+  "salida": "public/conozca",
+  "base_kit": "/kit-confianza/",
+  "ruta_publica": "/conozca/",
+  "titulo_pagina": "Conozca TranslateGemma · Recorrido",
+  "descripcion": "Recorrido por TranslateGemma: traducción de texto e imágenes entre 53 idiomas con un modelo abierto que corre con Ollama en este servidor.",
+  "favicon": "/marca/logos/favicon-32.png",
+  "inicio_url": "/",
+  "logo": { "src": "/marca/logos/tg-simbolo.svg", "ancho": 28, "alto": 28 },
+  "estilos_extra": ["/fnt/inter.css"],
+  "tema": {
+    "fondo": "#0A1014",
+    "panel": "#18262E",
+    "acento": "#2DD4BF",
+    "sobre_acento": "#0A1014",
+    "texto": "#E2E8F0",
+    "fuente": "'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+  },
+  "entrar": { "texto": "Usar el traductor", "url": "/traducir" },
+  "portada": {
+    "antetitulo": "TranslateGemma · Traducción con un modelo abierto",
+    "titulo": "De una orilla a otra",
+    "sub": "Siete capítulos, de lo general a lo específico: cómo se escribe, cómo se elige la pareja de idiomas, cómo llega la traducción, cómo se traduce una imagen, dónde se traduce, qué guarda una cuenta y qué no promete. Con las escenas del manual de marca, sin datos de nadie.",
+    "flotantes": [
+      { "img": "/marca/paradas/tg-parada-2.svg", "ancho": 1600, "alto": 900 },
+      { "img": "/marca/paradas/tg-parada-3.svg", "ancho": 1600, "alto": 900 },
+      { "img": "/marca/paradas/tg-parada-4.svg", "ancho": 1600, "alto": 900 }
+    ]
+  },
+  "capitulos": [
+    {
+      "clave": "escriba",
+      "titulo": "Escriba o pegue",
+      "rol": "Cualquiera",
+      "necesidad": "Para entender un texto en otro idioma, o escribir en uno que no domina, hace falta una traducción rápida sin instalar nada.",
+      "como": "El texto de origen va en un panel y el resultado aparece en el de al lado. El traductor funciona sin cuenta: la cuenta solo sirve para guardar el historial.",
+      "resumen": "Dos paneles, origen y destino, sin cuenta.",
+      "figuras": [
+        {
+          "titulo": "Escriba o pegue",
+          "camino": "translate.cedula360.tech/traducir",
+          "img": "/marca/paradas/tg-parada-1.svg", "ancho": 1600, "alto": 900,
+          "alt": "Ilustración del manual de marca: un panel de texto con el cursor al final de la última línea",
+          "pasos": [
+            { "titulo": "El texto de origen, a un lado.", "texto": "Escrito o pegado.", "marca": null },
+            { "titulo": "El resultado, al otro.", "texto": "Sin iniciar sesión.", "marca": null }
+          ]
+        }
+      ],
+      "beneficio": "Traduce en el navegador, sin instalar nada y sin crear una cuenta.",
+      "enlace": { "texto": "Usar el traductor", "url": "/traducir" }
+    },
+    {
+      "clave": "pareja",
+      "titulo": "Elija la pareja de idiomas",
+      "rol": "Cualquiera",
+      "necesidad": "Entre decenas de idiomas, encontrar el que necesita no debería ser una búsqueda larga.",
+      "como": "El selector tiene 53 idiomas, cada uno con su nombre propio, y se busca por nombre o por código. Un botón intercambia origen y destino.",
+      "resumen": "53 idiomas, búsqueda por nombre o código e intercambio.",
+      "figuras": [
+        {
+          "titulo": "Elija la pareja",
+          "camino": "translate.cedula360.tech/traducir",
+          "img": "/marca/paradas/tg-parada-2.svg", "ancho": 1600, "alto": 900,
+          "alt": "Ilustración del manual de marca: dos círculos de idioma unidos por flechas de ida y vuelta sobre una lista",
+          "pasos": [
+            { "titulo": "Busque por nombre o por código.", "texto": "Cada idioma con su nombre propio.", "marca": null },
+            { "titulo": "Intercambie.", "texto": "Origen y destino cambian de lado con un botón.", "marca": null }
+          ]
+        }
+      ],
+      "beneficio": "Llega al idioma que necesita en un par de pulsaciones.",
+      "cifra": "53 idiomas en el selector (la documentación del modelo declara 55)."
+    },
+    {
+      "clave": "directo",
+      "titulo": "La traducción, en directo",
+      "rol": "Cualquiera",
+      "necesidad": "Esperar en blanco a que termine una traducción larga hace dudar de si algo está pasando.",
+      "como": "La traducción se escribe a medida que el modelo la genera. Con Ctrl o Cmd + Enter se lanza sin soltar el teclado.",
+      "resumen": "Resultado a medida que se genera; Ctrl o Cmd + Enter.",
+      "figuras": [
+        {
+          "titulo": "Traduzca en directo",
+          "camino": "translate.cedula360.tech/traducir",
+          "img": "/marca/paradas/tg-parada-3.svg", "ancho": 1600, "alto": 900,
+          "alt": "Ilustración del manual de marca: dos paneles de texto, el de destino escribiéndose",
+          "pasos": [
+            { "titulo": "Se escribe mientras se genera.", "texto": "Ve el avance desde la primera palabra.", "marca": null },
+            { "titulo": "Ctrl o Cmd + Enter.", "texto": "Para traducir sin soltar el teclado.", "marca": null }
+          ]
+        }
+      ],
+      "beneficio": "Lee el resultado desde el primer momento, sin esperar en blanco."
+    },
+    {
+      "clave": "imagen",
+      "titulo": "Traduzca una imagen",
+      "rol": "Cualquiera",
+      "necesidad": "El texto de una foto o de una captura no se puede copiar y pegar.",
+      "como": "El modelo instalado lee imágenes: el texto de una foto o de una captura se traduce sin pasar por otro programa.",
+      "resumen": "El texto de una foto, traducido sin otro programa.",
+      "figuras": [
+        {
+          "titulo": "Traduzca una imagen",
+          "camino": "translate.cedula360.tech/traducir",
+          "img": "/marca/paradas/tg-parada-4.svg", "ancho": 1600, "alto": 900,
+          "alt": "Ilustración del manual de marca: una imagen de montañas cuyo texto pasa a un panel traducido",
+          "pasos": [
+            { "titulo": "Suba la foto o la captura.", "texto": "El modelo lee el texto que contiene.", "marca": null },
+            { "titulo": "Lea la traducción.", "texto": "Sin pasar por otro programa.", "marca": null }
+          ]
+        }
+      ],
+      "beneficio": "Un letrero, un documento fotografiado o una captura se entienden en su idioma."
+    },
+    {
+      "clave": "servidor",
+      "titulo": "Se traduce en este servidor",
+      "rol": "Cualquiera",
+      "necesidad": "Un texto privado no debería terminar en manos de un proveedor de IA para traducirlo.",
+      "como": "El texto viaja cifrado hasta este servidor y lo traduce translategemma, un modelo abierto de Google DeepMind que corre con Ollama aquí mismo. El servicio solo admite modelos locales de traducción: un modelo de la nube recibe un rechazo. Cada traducción admite hasta 8 MB y cada conexión, 30 traducciones por minuto.",
+      "resumen": "Un modelo local, sin proveedores de IA de por medio.",
+      "figuras": [
+        {
+          "titulo": "En este servidor",
+          "camino": "translate.cedula360.tech",
+          "img": "/marca/paradas/tg-parada-5.svg", "ancho": 1600, "alto": 900,
+          "alt": "Ilustración del manual de marca: dos paneles dentro de un recinto y una nube con la conexión cortada",
+          "pasos": [
+            { "titulo": "Solo modelos locales.", "texto": "Un modelo de la nube recibe un rechazo.", "marca": null },
+            { "titulo": "Hasta 8 MB por traducción.", "texto": "El texto y, si la hay, una imagen.", "marca": null },
+            { "titulo": "30 por minuto y conexión.", "texto": "La siguiente espera un minuto.", "marca": null }
+          ]
+        }
+      ],
+      "beneficio": "Su texto no se envía a ningún proveedor de IA.",
+      "cifra": "1 modelo, local: translategemma:latest."
+    },
+    {
+      "clave": "cuenta",
+      "titulo": "Traduzca sin cuenta; guarde con ella",
+      "rol": "Quien vuelve",
+      "necesidad": "Quien traduce a menudo quiere volver a lo que ya tradujo.",
+      "como": "Con una cuenta propia, o con la de Cédula 360 y su segundo factor, cada traducción queda en su historial, guardado en este servidor. Sin sesión no se guarda nada.",
+      "resumen": "Historial en este servidor, solo con sesión iniciada.",
+      "beneficio": "Recupera lo que tradujo; y si no inicia sesión, nada queda guardado.",
+      "enlace": { "texto": "Mi cuenta", "url": "/admin" }
+    },
+    {
+      "clave": "promete",
+      "titulo": "Lo que no promete",
+      "rol": "Todos",
+      "necesidad": "Saber qué no hace una herramienta evita usarla para lo que no sirve.",
+      "como": "No es un traductor oficial: el resultado es un borrador que conviene revisar, y un documento oficial necesita un traductor oficial. No funciona sin conexión. Hay un solo modelo instalado. Y no es un producto de Google: usa el modelo abierto TranslateGemma bajo los términos de uso de Gemma.",
+      "resumen": "Un borrador, en línea, con un modelo; no es de Google.",
+      "beneficio": "Sabe cuándo basta una traducción automática y cuándo no."
+    }
+  ],
+  "cierre": {
+    "titulo": "De una orilla a otra",
+    "texto": "Escriba en un idioma y léalo en otro, con un modelo abierto que corre en este servidor.",
+    "acciones": [
+      { "texto": "Usar el traductor", "url": "/traducir", "acento": true },
+      { "texto": "Volver a la portada", "url": "/" }
+    ]
+  },
+  "seguridad": true,
+  "contacto_seguridad": "/.well-known/security.txt"
+}
