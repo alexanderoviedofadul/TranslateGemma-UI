@@ -5,6 +5,15 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
+## [1.1.0] - 2026-10-25 — Recorrido /conozca/ y «Seguridad comprobada» (kit 1.0.4)
+
+- Recorrido inmersivo de 7 capítulos en `/conozca/` (`frontend/conozca.json` + kit «confianza y recorrido» 1.0.4,
+  servido por Caddy con CSP estricta) y la sección «Seguridad comprobada» en la portada, con trato de usted. Entradas
+  desde el recorrido de la portada, el pie y el modal de acceso.
+- **Fuera del repositorio**: Caddy con `security.txt` de `info@cedula360.tech`, `salud-publica`, COOP y CORP.
+
+Detalle, medición y pendientes en [docs/seguridad-comprobada-y-recorrido-2026-10-25.md](docs/seguridad-comprobada-y-recorrido-2026-10-25.md).
+
 ## [1.0.0] - 2026-10-11 — Manual de Marca v1.0 «De una orilla a otra» y la traducción de nuevo en marcha
 
 - **Fuera del repositorio** (aplicado el 11-oct): despliegue seguro (devDependencies, copia de `.next` y reinicio solo con `BUILD_ID`), firma obligatoria en el webhook y Caddy (CSP sin `unsafe-eval` ni CDNs, compresión, caché de `/marca/*` y log).

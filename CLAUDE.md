@@ -31,6 +31,13 @@ inlinea en el build: ver `start.sh` y el script de despliegue). Detalle: `docs/r
 (`https://ollama.alexanderoviedofadul.dev`) exige token desde el pentest del 10-oct-2026: apuntado allí, toda
 traducción da 401 y la página no muestra más que un error genérico.
 
+## Recorrido y «Seguridad comprobada» (desde el 25-oct-2026)
+
+- `/conozca/` (`frontend/public/conozca/`) lo genera el kit «confianza y recorrido» desde `frontend/conozca.json` y lo
+  **sirve Caddy** (`handle @tg_conozca`, CSP estricta propia), no Next. `public/kit-confianza/` es una **copia**.
+- `components/confianza/SeguridadComprobada.tsx` (`tratamiento="usted"`) lee `/salud-publica/publico.json` y no se
+  pinta sin mediciones publicables. 🔴 Ninguna cifra a mano. Ver [docs/seguridad-comprobada-y-recorrido-2026-10-25.md](docs/seguridad-comprobada-y-recorrido-2026-10-25.md).
+
 ## Seguridad (proxies)
 
 - 🔴 **`/ollama` solo admite modelos locales de traducción** (`translategemma*`, `gemma3*`, nunca `*cloud*`), filtra

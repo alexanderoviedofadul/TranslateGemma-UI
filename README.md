@@ -105,6 +105,14 @@ npm run dev
 
 ---
 
+## 🛡️ Recorrido y «Seguridad comprobada» (25-oct-2026)
+
+- **https://translate.cedula360.tech/conozca/**: recorrido inmersivo de 7 capítulos (escenas, diapositivas y mapa),
+  con las escenas del manual. Contenido en `frontend/conozca.json`.
+- La portada muestra lo que dicen de este sitio herramientas públicas (W3C, WAVE, Observatory…), leído de
+  `/salud-publica/publico.json`: ninguna cifra a mano.
+- Detalle: [docs/seguridad-comprobada-y-recorrido-2026-10-25.md](docs/seguridad-comprobada-y-recorrido-2026-10-25.md).
+
 ## 📚 Documentación Técnica
 
 Todo lo que necesitas saber sobre los modelos y la integración:
